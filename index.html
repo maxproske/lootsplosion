@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lootsplosion</title>
+		<meta name="description" content="Psst! Come check out the style guide my portfolio will be based on.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Citation: Normalize.css -->
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/icon.png">
+	</head>
+	<body>
+		<header>
+			<h1>Lootsplosion</h1>
+			<nav id="menu">
+				<ul>
+					<li class="active"><a href="./style-guide">Style Guide</a></li>
+					<li><a href="./wireframes">Wireframes</a></li>
+					<li><a href="./citations">Citations</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<aside id="sidebar">
+				<h2>Interactive Elements</h2>
+				<ul>
+					<li><a href="#in-text-links">In-Text Links</a></li>
+					<li><a href="#navigation-links">Navigation Links</a></li>
+					<li><a href="#submit-and-reset-button">Submit/Reset Button</a></li>
+					<li><a href="#text-input-field">Text Input Field</a></li>
+					<li><a href="#radio-button-input">Radio Button Input</a></li>
+					<li><a href="#image-as-a-link">Image As A Link</a></li>
+				</ul>
+				<h2>Text Styling</h2>
+				<ul>
+					<li><a href="#four-levels-of-headings">Four Levels of Headings</a></li>
+					<li><a href="#paragraphs">Paragraphs</a></li>
+					<li><a href="#numbered-list">Numbered List</a></li>
+				</ul>
+			</aside>
+			
+			<section id="content">
+				<h2>Style Guide</h2>
+				<p>This page contains a pattern library of the website's front-end code, as well as details about the overall visual language.</p>
+
+				
+				<section>
+				<h3>About Company</h2>
+				<p>Purchase loot boxes for all your favourite video games at our convenient, centralized hub, at the most attractive prices on the market.</p>
+				<p>Lootsplosion is intended to be a satirical website. Over the last few years, the gaming industry has seen a steady shift towards a new monetization strategy. Loot boxes (sometimes loot crate) is a consumable virtual item that can be redeemed for a randomised selection of further virtual items. Loot boxes lock desirable content behind these microtransactions with randomized payouts. Instead of “pay $X For Y item” the model is to purchase and open an unknown number of boxes until you get lucky and find something you wanted.</p>
+				<p>The phrase “Loot-splosion” was coined by the Borderlands video game franchise, that describes a rare and veritable explosion of guns, ammunition, money, and other loot, in reward for defeating a boss.</p>
+				<h4>What actions the user can perform:</h4>
+				<ol>
+					<li>Browse loot boxes for all games, with details page for each product.</li>
+					<li>Filter results by game, price, and type (cosmetic, EXP boosts, etc.).</li>
+					<li>Virtual shopping cart and checkout system.</li>
+					<li>Connect Steam, Battle.net, Origin accounts to deposit purchases. </li>
+					<li>Loyalty center to rewards buyers for repeat purchases and referrals.</li>
+				</ol>
+				</section>
+
+				<section>
+					<h3>Interactive Elements</h3>
+
+					<article id="in-text-links">
+						<h4>In-Text Links</h4>
+						<p>Use anchor tags to jump to a specific location on the page.</p>
+						<p><code>.in-text-link</code></p>
+						<pre class="html"><code>&lt;a class=&quot;in-text-link&quot; href="#"&gt;Back to top&lt;/a&gt;</code></pre>
+						<p><a class="in-text-link" href="#">Back to top</a></p>
+					</article>
+
+					<article id="navigation-links">
+						<h4>Navigation Links</h4>
+						<p><code>.navigation-link</code></p>
+						<pre class="html"><code>&lt;a class=&quot;navigation-link&quot; href="./citations"&gt;Citations&lt;/a&gt;</code></pre>
+						<p><a class="navigation-link" href="./citations">Citations</a></p>
+					</article>
+
+					<article id="submit-and-reset-button">
+						<h4>Submit/Reset Button For Forms</h4>
+						<p><code>.submit-button</code> and <code>.reset-button</code></p>
+						<pre class="html"><code>&lt;button class=&quot;submit-button&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;Submit&lt;/button&gt;<br>&lt;button class=&quot;reset-button&quot; type=&quot;reset&quot; value=&quot;Reset&quot;&gt;Reset&lt;/button&gt;</code></pre>
+						<p><button class="submit-button" type="submit" value="Submit">Submit</button>&nbsp;<button class="reset-button" type="reset" value="Reset">Reset</button></p>
+					</article>
+
+					<article id="text-input-field">
+							<h4>Text Input Label and Field</h4>
+							<p><code>.text-input-label</code> and <code>.text-input-field</code></p>
+							<pre class="html"><code>&lt;label class=&quot;text-input-label&quot; for=&quot;favorite-animal&quot;&gt;Favorite Animal:&lt;/label&gt;<br>&lt;input class=&quot;text-input-field&quot; name=&quot;favorite-animal&quot; id=&quot;favorite-animal&quot; placeholder=&quot;Cats&quot;&gt;</code></pre>
+							<p><label class="text-input-label" for="favorite-animal">Favorite Animal:</label><input class="text-input-field" name="favorite-animal" id="favorite-animal" placeholder="Cats"></p>
+					</article>
+
+					<article id="radio-button-input">
+						<h4>Radio Button Input Label and Field</h4>
+						<p><code>.radio-input-label</code> and <code>.radio-input-field</code></p>
+						<pre class="html"><code>&lt;input class=&quot;radio-button-label&quot; class=&quot;radio-button-field&quot; type=&quot;radio&quot; name=&quot;favorite-animal&quot; id=&quot;cats&quot; value=&quot;cats&quot;&gt;<br>&lt;label for=&quot;cats&quot;&gt;Cats&lt;/label&gt;&lt;br&gt;<br>&lt;input type=&quot;radio&quot; name=&quot;favorite-animal&quot; id=&quot;dogs&quot; value=&quot;dogs&quot;&gt;<br>&lt;label for=&quot;dogs&quot;&gt;Dogs&lt;/label&gt;&lt;br&gt;</code></pre>
+						<p>
+							<input class="radio-input-label" type="radio" name="favorite-animal" id="cats" value="cats">
+							<label for="cats">Cats</label><br>
+							<input class="radio-input-field" type="radio" name="favorite-animal" id="dogs" value="dogs">
+							<label for="dogs">Dogs</label><br>
+						</p>
+					</article>
+
+					<article id="image-as-a-link">
+						<h4>Image as a Link</h4>
+						<p><code>.image-link</code></p>
+						<pre class="html"><code>&lt;a class=&quot;image-link&quot; href=&quot;./img/robot.jpg&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;figure&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;./img/robot.jpg&quot; alt=&quot;A toy robot with a menacing expression&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption&gt;Beware of robots like this.&lt;/figcaption&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;<br>&lt;/a&gt;</code></pre>
+							<a class="image-link" href="./img/robot.jpg">
+								<figure>
+										<img src="./img/robot.jpg" alt="A toy robot with a menacing expression">
+										<!-- Element figcaption not allowed as child of element a -->
+										<figcaption>Beware of robots like this.</figcaption>
+								</figure>
+							</a>
+					</article>
+
+				</section>
+
+				<section>
+					<h3>Text Styling</h3>
+					<article id="four-levels-of-headings">
+						<h4>Four levels of headings</h4>
+						<p><code>.title</code>, <code>.subtitle</code>, <code>.heading</code>, and <code>.subheading</code></p>
+						<pre class="html"><code>&lt;h1 class=&quot;title&quot;&gt;Title&lt;/h1&gt;<br>&lt;h2 class=&quot;subtitle&quot;&gt;Subtitle&lt;/h2&gt;<br>&lt;h3 class=&quot;heading&quot;&gt;Heading&lt;/h3&gt;<br>&lt;h4 class=&quot;subheading&quot;&gt;Subheading&lt;/h4&gt;</code></pre>
+						<h1 class="title">Title</h1>
+						<h2 class="subtitle">Subtitle</h2>
+						<h3 class="heading">Heading</h3>
+						<h4 class="subheading">Subheading</h4>
+					</article>
+
+					<article id="paragraphs">
+						<h4>Paragraphs</h4>
+						<p><code>.paragraph</code></p>
+						<pre class="html"><code>&lt;p class=&quot;paragraph&quot;&gt;Hello, world!&lt;/p&gt;</code></pre>
+						<p class="paragraph">Hello, world!</p>
+					</article>
+
+					<article id="numbered-list">
+						<h4>Numbered list</h4>
+						<p><code>.numbered-list</code></p>
+						<pre class="html"><code>&lt;ol class=&quot;numbered-list&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cats&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Dogs&lt;/li&gt;<br>&lt;/ol&gt;</code></pre>
+						<ol><li class="numbered-list">Cats</li><li>Dogs</li></ol>
+					</article>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			<p>Max Proske (301235293), IAT 339 Fall 2018</p>
+		</footer>
+	</body>
+</html>
