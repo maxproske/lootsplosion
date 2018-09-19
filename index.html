@@ -39,6 +39,13 @@
 					<li><a href="#paragraphs">Paragraphs</a></li>
 					<li><a href="#numbered-list">Numbered List</a></li>
 				</ul>
+				<h2>Combined Elements</h2>
+				<ul>
+					<li><a href="#main-navigation">Main Navigation</a></li>
+					<li><a href="#product-service">Product/Service</a></li>
+					<li><a href="#payment-form">Payment Form</a></li>
+					<li><a href="#checkout-cart">Checkout Cart</a></li>
+				</ul>
 			</aside>
 			
 			<section id="content">
@@ -144,6 +151,43 @@
 						<p><code>.numbered-list</code></p>
 						<pre class="html"><code>&lt;ol class=&quot;numbered-list&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cats&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Dogs&lt;/li&gt;<br>&lt;/ol&gt;</code></pre>
 						<ol><li class="numbered-list">Cats</li><li>Dogs</li></ol>
+					</article>
+				</section>
+
+				<section>
+					<h3>Combined Elements</h3>
+
+					<article id="main-navigation">
+						<h4>Main Navigation</h4>
+						<p><code>.main-navigation</code></p>
+						<pre class="html"><code>&lt;header class=&quot;main-navigation&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Lootsplosion&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Wireframes&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Citations&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>&lt;/header&gt;</code></pre>
+						<header class="main-navigation"><h1>Lootsplosion</h1> <nav> <ul> <li class="active"><a href="#">Style Guide</a></li> <li><a href="#">Wireframes</a></li> <li><a href="#">Citations</a></li> </ul> </nav> </header>
+					</article>
+
+					<article id="product-service">
+						<h4>Product/Service Listing</h4>
+						<p><code>.listing</code> and <code>.product</code></p>
+						<pre class="html"><code>&lt;section class=&quot;products&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 1&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 2&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 3&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 4&lt;/article&gt;<br>&lt;/section&gt;</code></pre>
+						<section class="listing">
+							<article class="product">Item 1</article>
+							<article class="product">Item 2</article>
+							<article class="product">Item 3</article>
+							<article class="product">Item 4</article>
+						</section>
+					</article>
+
+					<article id="payment-form">
+						<h4>Payment Form</h4>
+						<p><code>.payment-form</code></p>
+						<pre class="html"><code></code></pre>
+						<p><label class="text-input-label" for="favorite-animal">Address:</label><input class="text-input-field" name="name" placeholder="John Doe"></p>
+					</article>
+
+					<article id="checkout-cart">
+						<h4>Checkout Cart with at least two items</h4>
+						<p><code>.checkout-cart</code></p>
+						<pre class="html"><code></code></pre>
+						<p></p>
 					</article>
 				</section>
 			</section>

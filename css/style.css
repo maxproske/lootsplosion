@@ -110,6 +110,18 @@ body {
         overflow: auto; }
       body main section#content article button {
         width: 5rem; }
+    body main section#content section.listing {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    body main section#content article.product {
+      width: 42%;
+      min-height: 3rem;
+      background: #eee;
+      border: 1px solid #ccc;
+      text-align: center;
+      margin-bottom: 1rem;
+      padding: 1rem; }
     body main section#content a {
       display: inline-block; }
     body main section#content a figure {
