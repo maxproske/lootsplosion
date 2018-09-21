@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Lootsplosion</title>
-		<meta name="description" content="Psst! Come check out the style guide my portfolio will be based on.">
+		<meta name="description" content="Psst! Come check out the style guide this website based on.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Citation: Normalize.css -->
 		<link rel="stylesheet" href="css/normalize.min.css">
@@ -24,6 +24,13 @@
 
 		<main>
 			<aside id="sidebar">
+				<h2>Brand Identity</h2>
+				<ul>
+					<li><a href="#about">About The Company</a></li>
+					<li><a href="#fonts">Fonts and Colours</a></li>
+					<li><a href="#imagery-and-art-direction">Art Direction</a></li>
+					<li><a href="#personas">Personas</a></li>
+				</ul>
 				<h2>Interactive Elements</h2>
 				<ul>
 					<li><a href="#in-text-links">In-Text Links</a></li>
@@ -48,24 +55,44 @@
 				</ul>
 			</aside>
 			
-			<section id="content">
+			<section id="style-guide">
 				<h2>Style Guide</h2>
 				<p>This page contains a pattern library of the website's front-end code, as well as details about the overall visual language.</p>
 
-				
-				<section>
-				<h3>About Company</h2>
-				<p>Purchase loot boxes for all your favourite video games at our convenient, centralized hub, at the most attractive prices on the market.</p>
-				<p>Lootsplosion is intended to be a satirical website. Over the last few years, the gaming industry has seen a steady shift towards a new monetization strategy. Loot boxes (sometimes loot crate) is a consumable virtual item that can be redeemed for a randomised selection of further virtual items. Loot boxes lock desirable content behind these microtransactions with randomized payouts. Instead of “pay $X For Y item” the model is to purchase and open an unknown number of boxes until you get lucky and find something you wanted.</p>
-				<p>The phrase “Loot-splosion” was coined by the Borderlands video game franchise, that describes a rare and veritable explosion of guns, ammunition, money, and other loot, in reward for defeating a boss.</p>
-				<h4>What actions the user can perform:</h4>
-				<ol>
-					<li>Browse loot boxes for all games, with details page for each product.</li>
-					<li>Filter results by game, price, and type (cosmetic, EXP boosts, etc.).</li>
-					<li>Virtual shopping cart and checkout system.</li>
-					<li>Connect Steam, Battle.net, Origin accounts to deposit purchases. </li>
-					<li>Loyalty center to rewards buyers for repeat purchases and referrals.</li>
-				</ol>
+				<section id="brand-identity">
+					<h3>Brand Identity</h3>
+
+					<article id="about">
+						<h4>About</h4>
+						<p>Purchase loot boxes for all your favourite video games at our convenient, centralized hub, at the most attractive prices on the market.</p>
+						<p>Lootsplosion is intended to be a satirical website. Over the last few years, the gaming industry has seen a steady shift towards a new monetization strategy. Loot boxes (sometimes loot crate) is a consumable virtual item that can be redeemed for a randomised selection of further virtual items. Loot boxes lock desirable content behind these microtransactions with randomized payouts. Instead of “pay $X For Y item” the model is to purchase and open an unknown number of boxes until you get lucky and find something you wanted.</p>
+
+						<h4>Inspiration</h4>
+						<p>The phrase “Loot-splosion” was coined by the Borderlands video game franchise, that describes a rare and veritable explosion of guns, ammunition, money, and other loot, in reward for defeating a boss.</p>
+
+						<h4>What actions the user can perform:</h4>
+						<ol>
+							<li>Browse loot boxes for all games, with details page for each product.</li>
+							<li>Filter results by game, price, and type (cosmetic, EXP boosts, etc.).</li>
+							<li>Virtual shopping cart and checkout system.</li>
+							<li>Connect Steam, Battle.net, Origin accounts to deposit purchases. </li>
+							<li>Loyalty center to rewards buyers for repeat purchases and referrals.</li>
+						</ol>
+					</article>
+				</section>
+
+				<section id="personas">
+					<h3>Personas</h3>
+					<article id="persona-1">
+							<h4>Persona #1: Andrew</h4>
+							<img class="persona" src="./img/persona-1.jpg">
+							<p>Andrew is a 32-year-old hardcore gamer. His favourite games are Halo 5: Guardians and Desinty 2. Unfortunately, he works full-time as a graphic designer, and doesn't have the time to play enough to progress through these games normally. Andrew wants to pay in order to stay competitive in the online multiplayer scene.</p>
+					</article>
+					<article id="persona-2">
+							<h4>Persona #2: Laura</h4>
+							<img class="persona" src="./img/persona-2.jpg">
+							<p>Laura is a 23-year-old midcore gamer. She spends time everyday playing Multiplayer online battle arena (MOBA) games, such as League of Legends and Dota 2. Laura is a completionist, and must collect all the "skins" or varients of her favourite champions. But it would take forever to collect them all through normal play.</p>
+					</article>
 				</section>
 
 				<section>
@@ -123,8 +150,7 @@
 										<figcaption>Beware of robots like this.</figcaption>
 								</figure>
 							</a>
-					</article>
-
+						</article>
 				</section>
 
 				<section>
@@ -192,10 +218,20 @@
 				</section>
 
 				<section>
+					<article id="fonts">
+						<h3>Fonts</h3>
+						<p>The primary font is <strong>Open Sans</strong>, with fallback on Helvetica, Arial, sans-serif.</p>
+						<p>For headlines and subheads, I choise an expressive font called <strong>Raleway</strong>.</p>
+					</article>
+				</section>
+			</section>
+
+			<section>
+				<article id="colours">
 					<h3>Colours</h3>
 					<p>Using colors consistently brings a sense of familiarty to the product.</p>
 
-					<article id="colours">
+					<article>
 						<section class="grid">
 							<div class="container">
 								<div class="grid-row">
@@ -229,8 +265,29 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</article>
 					</article>
+
+					<article id="imagery-and-art-direction">
+						<h3>Potential Imagery &amp; Art Direction</h3>
+						<figure>
+							<img src="./img/inspiration1.jpg">
+							<figcaption>Most importantly, purchases need to "feel" like a massive explosion of loot. By using item beam effects, I hope to capture this emotion in the buyer (Borderlands 2, 2012).</figcaption>
+						</figure>
+						<figure>
+							<img src="./img/inspiration2.png">
+							<figcaption>Dramatic, futuristic, and playful art style (Borderlands 2, 2012).</figcaption>
+						</figure>
+						<figure>
+							<img src="./img/inspiration3.jpg">
+							<figcaption>Navigation similar to inventory and shop screens in video games (God of War, 2018).</figcaption>
+						</figure>
+						<figure>
+							<img src="./img/inspiration4.jpg">
+							<figcaption>Non-traditional checkout cart (Guild Wars 2, 2012).</figcaption>
+						</figure>
+					</article>
+				</section>
 			</section>
 		</main>
 
