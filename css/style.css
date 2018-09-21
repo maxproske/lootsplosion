@@ -195,10 +195,8 @@ body {
       border: 1px solid #07C;
       box-shadow: 0 0 10px #07C; }
     body main section#style-guide pre.html:before {
-      content: "HTML";
       background: #333; }
     body main section#style-guide pre.css:before {
-      content: "CSS Selector";
       background: #ff9800; }
     body main section#style-guide section {
       margin-top: 3rem; }
