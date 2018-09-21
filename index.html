@@ -15,9 +15,9 @@
 			<h1>Lootsplosion</h1>
 			<nav id="menu">
 				<ul>
-					<li class="active"><a href="./style-guide">Style Guide</a></li>
-					<li><a href="./wireframes">Wireframes</a></li>
-					<li><a href="./citations">Citations</a></li>
+					<li class="active"><a href="#">Style Guide</a></li>
+					<li><a href="#wireframes">Wireframes</a></li>
+					<li><a href="#citations">Citations</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -110,7 +110,7 @@
 						<h4>Navigation Links</h4>
 						<p><code>.navigation-link</code></p>
 						<pre class="html"><code>&lt;a class=&quot;navigation-link&quot; href="./citations"&gt;Citations&lt;/a&gt;</code></pre>
-						<p><a class="navigation-link" href="./citations">Citations</a></p>
+						<p><a class="navigation-link" href="#citations">Citations</a></p>
 					</article>
 
 					<article id="submit-and-reset-button">
@@ -127,15 +127,15 @@
 							<p><label class="text-input-label" for="favorite-animal">Favorite Animal:</label><input class="text-input-field" name="favorite-animal" id="favorite-animal" placeholder="Cats"></p>
 					</article>
 
+					<article id="radio-button-input">					</article>
+
 					<article id="radio-button-input">
 						<h4>Radio Button Input Label and Field</h4>
 						<p><code>.radio-input-label</code> and <code>.radio-input-field</code></p>
 						<pre class="html"><code>&lt;input class=&quot;radio-button-label&quot; class=&quot;radio-button-field&quot; type=&quot;radio&quot; name=&quot;favorite-animal&quot; id=&quot;cats&quot; value=&quot;cats&quot;&gt;<br>&lt;label for=&quot;cats&quot;&gt;Cats&lt;/label&gt;&lt;br&gt;<br>&lt;input type=&quot;radio&quot; name=&quot;favorite-animal&quot; id=&quot;dogs&quot; value=&quot;dogs&quot;&gt;<br>&lt;label for=&quot;dogs&quot;&gt;Dogs&lt;/label&gt;&lt;br&gt;</code></pre>
 						<p>
-							<input class="radio-input-label" type="radio" name="favorite-animal" id="cats" value="cats">
-							<label for="cats">Cats</label><br>
-							<input class="radio-input-field" type="radio" name="favorite-animal" id="dogs" value="dogs">
-							<label for="dogs">Dogs</label><br>
+							<label for="cats">Cats</label> <input class="radio-input-label" type="radio" name="favorite-animal" id="cats" value="cats"><br>
+							<label for="dogs">Dogs</label><input class="radio-input-field" type="radio" name="favorite-animal" id="dogs" value="dogs"><br>
 						</p>
 					</article>
 
@@ -187,7 +187,7 @@
 						<h4>Main Navigation</h4>
 						<p><code>.main-navigation</code></p>
 						<pre class="html"><code>&lt;header class=&quot;main-navigation&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Lootsplosion&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Wireframes&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Citations&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>&lt;/header&gt;</code></pre>
-						<header class="main-navigation"><h1>Lootsplosion</h1> <nav> <ul> <li class="active"><a href="#">Style Guide</a></li> <li><a href="#">Wireframes</a></li> <li><a href="#">Citations</a></li> </ul> </nav> </header>
+						<header class="main-navigation"><h1>Lootsplosion</h1> <nav> <ul> <li class="active"><a href="#">Style Guide</a></li> <li><a href="#wireframes">Wireframes</a></li> <li><a href="#citations">Citations</a></li> </ul> </nav> </header>
 					</article>
 
 					<article id="product-service">
@@ -196,10 +196,10 @@
 						<pre class="html"><code>&lt;section class=&quot;products&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 1&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 2&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 3&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class=&quot;product&quot;&gt;Item 4&lt;/article&gt;<br>&lt;/section&gt;</code></pre>
 						<section class="listing">
 							<h5>Product Listing</h5>
-							<article class="product"><h5>Item 1</h5></article>
-							<article class="product"><h5>Item 2</h5></article>
-							<article class="product"><h5>Item 3</h5></article>
-							<article class="product"><h5>Item 4</h5></article>
+							<article class="product"><h6>Item 1</h6></article>
+							<article class="product"><h6>Item 2</h6></article>
+							<article class="product"><h6>Item 3</h6></article>
+							<article class="product"><h6>Item 4</h6></article>
 						</section>
 					</article>
 
@@ -207,14 +207,12 @@
 						<h4>Payment Form</h4>
 						<p><code>.payment-form</code></p>
 						<pre class="html"><code>Coming soon!</code></pre>
-						<p><label class="text-input-label" for="favorite-animal">Address:</label><input class="text-input-field" name="name" placeholder="John Doe"></p>
 					</article>
 
 					<article id="checkout-cart">
 						<h4>Checkout Cart with at least two items</h4>
 						<p><code>.checkout-cart</code></p>
 						<pre class="html"><code>Coming soon!</code></pre>
-						<p></p>
 					</article>
 				</section>
 

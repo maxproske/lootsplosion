@@ -97,7 +97,6 @@ body {
             text-decoration: underline;
         }
         a:focus {
-            outline: none;
             padding: 0.5rem;
             color: #33AAFF;
             border: 1px solid #33AAFF;
@@ -276,7 +275,6 @@ body {
                 border: 1px solid #07C;
             }
             input:focus {
-                outline: none;
                 border:1px solid #07C;
                 box-shadow: 0 0 10px #07C;
             }
@@ -358,17 +356,17 @@ body {
     }
 
     .color-title {
-        font-size: 12px;
+        font-size: 1rem;
         text-transform: uppercase;
         color: #CED7DF;
         display: block;
     }
 
     .color-name {
-        font-size: 16px;
+        font-size: 1rem;
         color: #59626a;
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 
     .color-display, .outline-button-bg {
