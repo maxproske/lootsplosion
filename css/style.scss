@@ -21,7 +21,7 @@ html {
 }
 
 .product-listing {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     .category {
         display: flex;
@@ -123,18 +123,18 @@ html {
                 align-self: center;
                 flex-basis: 1rem;
 
+                color: #333;
                 border-radius: 0.3rem;
                 padding: 1rem;
                 margin: 1rem;
-                background-color: #4caf50;
-                color: white;
+                border: 1px solid #333;
+                background-color: transparent;
                 text-decoration: none;
-                border: 1px solid #fff;
 
                 &:hover {
-                    color: #4caf50;
-                    background-color: #fff;
-                    border: 1px solid #4caf50;
+                    color: #333;
+                    background-color: rgb(242, 225, 35);
+                    border: 1px solid #333;
                     cursor: pointer;
                 }
             }
@@ -153,6 +153,9 @@ html {
                 .media {
                     height: 20rem;
                 }
+                .price {
+                    font-size: 1.5rem;
+                }
             }
 
             .add-to-cart {
@@ -164,6 +167,20 @@ html {
     }
 }
 
+@media (max-width: 38em) {
+    .banner {
+        padding: 1rem;
+        width: 85%;
+    }
+    html body header nav ul li {
+         width: 100%;
+         padding: 0 1rem;
+    }
+    html body main {
+        padding: 0.5rem;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -172,7 +189,7 @@ body {
     color: #333;
 
     header {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
         background-color: transparent;
         color: #fff;
         text-align: center;
@@ -180,6 +197,16 @@ body {
 
         h1 {
             display: none;
+        }
+
+        .banner {
+            max-width: 100%;
+            filter: opacity(85%);
+
+            &:hover {
+                filter: opacity(100%);
+                transition: filter 0.1s cubic-bezier(0.42, 0.40, 0.21, 0.90);
+            }
         }
 
         nav {
@@ -199,15 +226,16 @@ body {
 
                     a {
                         display: block;
-                        color: #fff;
-                        border: 1px solid #fff;
+                        color: #333;
+                        border: 1px solid #333;
+                        background-color: #fff;
                         padding: 0.5rem;
                         border-radius: 0.3rem;
                         text-decoration: none;
 
                         &:hover {
                             color: #333;
-                            background-color: #fff;
+                            background-color: rgb(242, 225, 35);
                             -webkit-transition-duration: 0.2s;
                             transition-duration: 0.2s;
                         }
@@ -216,7 +244,7 @@ body {
                 li.active {
                     a {
                         color: #333;
-                        background-color: #fff;
+                        background-color: rgb(242, 225, 35);
                         -webkit-transition-duration: 0.2s;
                         transition-duration: 0.2s;  
                     }
@@ -242,7 +270,7 @@ body {
         }
         a:focus {
             color: #fff;
-            box-shadow: 0 0 1rem #4caf50;
+            box-shadow: 0 0 1rem rgb(242, 225, 35);
             border-radius: 0.3rem;
             text-decoration: none;
         }
@@ -420,10 +448,10 @@ body {
 
             // The text input shows us when it has been interacted with, both on hover and focus
             input:hover {
-                border: 1px solid #4caf50;
+                border: 1px solid rgb(242, 225, 35);
             }
             input:focus {
-                box-shadow: 0 0 10px #4caf50;
+                box-shadow: 0 0 10px rgb(242, 225, 35);
             }
 
             pre.html:before {
