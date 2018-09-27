@@ -94,7 +94,6 @@ body {
             text-decoration: underline;
         }
         a:focus {
-            outline: none;
             padding: 0.5rem;
             color: #33AAFF;
             border: 1px solid #33AAFF;
@@ -243,6 +242,9 @@ body {
                 }
             }
 
+            section h5 {
+                flex: 1 100%;
+            }
             section.listing {
                 display: flex;
                 justify-content: space-between;
@@ -347,18 +349,15 @@ body {
                 border: 1px solid #07C;
             }
             input:focus {
-                outline: none;
                 border:1px solid #07C;
                 box-shadow: 0 0 10px #07C;
             }
 
             pre.html:before {
-                content: "HTML";
                 background: #333;
             }
 
             pre.css:before {
-                content: "CSS Selector";
                 background: #ff9800;
             }
 
@@ -391,11 +390,11 @@ body {
         color: #59626a;
     }
 
-    section.grid .grid-row {
+    div.grid .grid-row {
         margin-bottom: 1rem;
     }
 
-    section.grid .grid-row .col {
+    div.grid .grid-row .col {
         margin-right: 2%;
         margin-bottom: 1rem;
         width: 20%;
@@ -429,17 +428,17 @@ body {
     }
 
     .color-title {
-        font-size: 12px;
+        font-size: 1rem;
         text-transform: uppercase;
         color: #CED7DF;
         display: block;
     }
 
     .color-name {
-        font-size: 16px;
+        font-size: 1rem;
         color: #59626a;
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 
     .color-display, .outline-button-bg {
@@ -456,6 +455,11 @@ body {
     #imagery-and-art-direction {
         figure {
             margin: 0 0 2rem 0;
+            line-height: 1.5rem;
+
+            figcaption {
+                margin-top: 0.5rem;
+            }
         }
         img {
             width: 100%;

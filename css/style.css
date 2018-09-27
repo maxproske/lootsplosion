@@ -69,7 +69,6 @@ body {
       transition: 0.2s;
       text-decoration: underline; }
     body main a:focus {
-      outline: none;
       padding: 0.5rem;
       color: #33AAFF;
       border: 1px solid #33AAFF;
@@ -169,6 +168,8 @@ body {
         overflow: auto; }
       body main section#style-guide article button {
         width: 5rem; }
+    body main section#style-guide section h5 {
+      flex: 1 100%; }
     body main section#style-guide section.listing {
       display: flex;
       justify-content: space-between;
@@ -245,14 +246,11 @@ body {
     body main section#style-guide input:hover {
       border: 1px solid #07C; }
     body main section#style-guide input:focus {
-      outline: none;
       border: 1px solid #07C;
       box-shadow: 0 0 10px #07C; }
     body main section#style-guide pre.html:before {
-      content: "HTML";
       background: #333; }
     body main section#style-guide pre.css:before {
-      content: "CSS Selector";
       background: #ff9800; }
     body main section#style-guide section {
       margin-top: 3rem; }
@@ -269,9 +267,9 @@ body {
       width: 100px; }
   body .container {
     color: #59626a; }
-  body section.grid .grid-row {
+  body div.grid .grid-row {
     margin-bottom: 1rem; }
-  body section.grid .grid-row .col {
+  body div.grid .grid-row .col {
     margin-right: 2%;
     margin-bottom: 1rem;
     width: 20%;
@@ -293,15 +291,15 @@ body {
     height: 100px;
     display: block; }
   body .color-title {
-    font-size: 12px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #CED7DF;
     display: block; }
   body .color-name {
-    font-size: 16px;
+    font-size: 1rem;
     color: #59626a;
     display: block;
-    margin-bottom: 15px; }
+    margin-bottom: 1rem; }
   body .color-display, body .outline-button-bg {
     border-radius: 0.3rem 0.3rem 0 0; }
   body footer {
@@ -311,7 +309,10 @@ body {
     vertical-align: middle;
     padding: 2em 0 1em 0; }
   body #imagery-and-art-direction figure {
-    margin: 0 0 2rem 0; }
+    margin: 0 0 2rem 0;
+    line-height: 1.5rem; }
+    body #imagery-and-art-direction figure figcaption {
+      margin-top: 0.5rem; }
   body #imagery-and-art-direction img {
     width: 100%; }
 
