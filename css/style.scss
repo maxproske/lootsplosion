@@ -173,11 +173,20 @@ html {
         width: 85%;
     }
     html body header nav ul li {
-         width: 100%;
-         padding: 0 1rem;
+        width: 100%;
+        padding: 0 1rem;
+        a {
+            padding: 1rem;
+        }
     }
     html body main {
         padding: 0.5rem;
+    }
+    html body header {
+        padding-top: 1rem;
+    }
+    .add-to-cart {
+        width: 80%;
     }
 }
 
@@ -189,7 +198,7 @@ body {
     color: #333;
 
     header {
-        padding: 2rem 0 0 0;
+        padding-top: 4rem;
         background-color: transparent;
         color: #fff;
         text-align: center;
@@ -222,14 +231,14 @@ body {
                 li {
                     margin: 0.25rem;
                     display: block;
-                    width: 7rem;
+                    width: 9rem;
 
                     a {
                         display: block;
                         color: #333;
                         border: 1px solid #333;
                         background-color: #fff;
-                        padding: 0.5rem;
+                        padding: 1rem;
                         border-radius: 0.3rem;
                         text-decoration: none;
 
