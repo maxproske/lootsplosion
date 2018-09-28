@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lootsplosion - Style Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Citation: Normalize.css -->
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/icon.png">
+	</head>
+	<body>
+		<header>
+            <h1>Lootsplosion</h1>
+            <a href="#"><img class="banner" src="img/lootsplosion.png"></a>
+			<nav id="menu">
+				<ul>
+					<li><a href="./style-guide.html">Style Guide</a></li>
+					<li><a href="./product.html">Product</a></li>
+					<li class="active"><a href="./checkout.html">Checkout</a></li>
+					<li><a href="./citations.html">Citations</a></li>
+				</ul>
+			</nav>
+        </header>
+        
+		<main class="content">
+                <section class="checkout">
+                    <h2 class="checkout-title">Checkout</h2>
+
+                    <article class="payment">
+                        <h3 class="payment-title">Billing Information</h3>
+
+                        <form>
+                            <label class="select-input-label" for="card-type">Card Type</label>
+                            <select class="select-input-field" id="card-type" name="card-type">
+                                <option value="mc">Mastercard</option>
+                                <option value="visa">Visa</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                            <br>
+                            <label class="text-input-label" for="card-name">Cardholder's Name</label>
+                            <input class="text-input-field" type="text" name="card-name" id="card-name" placeholder="John Doe" required>
+                            <br>
+                            <label class="text-input-label" for="card-number">Card Number</label>
+                            <input class="text-input-field" type="text" name="card-number" id="card-number" placeholder="4170 0000 0000 0000" required>
+                            <br>
+                            <label class="text-input-label" for="card-expiry">Valid thru</label>
+                            <input class="text-input-field" type="text" name="card-expiry" id="card-expiry" placeholder="MM/YY" required>
+                            <br>
+                            <label class="text-input-label" for="card-cvc">CVC</label>
+                            <input class="text-input-field" type="text" name="card-cvc" id="card-cvc" placeholder="000" required>
+                            <br>
+                            <input class="submit-button" type="submit" value="Submit">
+                        </form>
+                    </article>
+            </section>
+        </main>
+    </body>
+</html>

@@ -5,21 +5,123 @@
             box-sizing: inherit;
 }
 
-body {
-    main {
-        /*
-        max-width: 37rem;
-        margin: 0 auto;
-        */
-    }
-}
-
-/* Style */
+/* Global */
 html {
     scroll-behavior: smooth;
     background-color: #ececec;
 }
 
+/* Citations and Style Guide */
+.citations, .style-guide {
+    margin-bottom: 6rem;
+
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
+
+    .citations-title, .style-guide-title {
+        flex: 1 100%;
+        margin: 0;
+        font-size: 1.75rem;
+    }
+}
+
+/* Checkout */
+.checkout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    .checkout-title {
+        flex: 1 100%;
+        margin: 3rem 0 0 1rem;
+        font-size: 1.75rem;
+    }
+
+    .payment {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%; /* Stretch */
+
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        margin: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
+        box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
+
+        .payment-title {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        // The label and text input look visually related
+        .text-input-label, .select-input-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .radio-input-label {
+            display: inline-block;
+        }
+        
+        .text-input-field, .select-input-field {
+            border: 1px solid #c6c7cc;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+            padding: 0.75rem;
+            width: 12rem;
+        }
+
+        .submit-button {
+            width: 12rem;
+            height: 2rem;
+            background-color: #07C;
+            border-radius: 0.3rem;
+            border: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 8px 16px;
+        }
+        .submit-button:hover {
+            color: #33AAFF;
+            background: #fff;
+            border: 1px solid #33AAFF;
+            transition: 0.2s;
+        }
+        .reset-button {
+            background-color: #af4c4c;
+            border-radius: 0.3rem;
+            border: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 8px 16px;
+        }
+        .reset-button:hover {
+            color: #af4c4c;
+            background: #fff;
+            border: 1px solid #af4c4c;
+            transition: 0.2s;
+        }
+
+        .text-input-label, .select-input-label {
+            flex: 1 100%;
+        }
+        .text-input-field, .select-input-field {
+            flex: 1 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* Product Listing */
 .product-listing {
     margin-bottom: 6rem;
 
@@ -75,7 +177,7 @@ html {
             }
 
             .product-title {
-                flex-basis: 3.5rem; /* Account for longer titles spanning multiple lines */
+                flex-basis: 3rem; /* Account for longer titles spanning multiple lines */
                 padding: 1rem;
                 margin: 0;
                 order: 2;
@@ -180,7 +282,7 @@ html {
         }
     }
     html body main {
-        padding: 0.5rem;
+        padding: 2rem 0.5rem;
     }
     html body header {
         padding-top: 1rem;
@@ -265,7 +367,6 @@ body {
     main {
         max-width: 80rem;
         margin: 0 auto;
-        padding: 0 2rem;
 
         a {
             color: #07C;
@@ -318,7 +419,7 @@ body {
             */
         }    
 
-        section#style-guide {
+        .style-guide {
             p {
                 line-height: 1.5rem;
                 // Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks
@@ -414,7 +515,7 @@ body {
                 padding: 0.75rem;
             }
             .submit-button {
-                background-color: #07C;
+                background-color: #4caf50;
                 border-radius: 0.3rem;
                 border: 1px solid #fff;
                 color: #fff;
@@ -423,9 +524,9 @@ body {
                 padding: 8px 16px;
             }
             .submit-button:hover {
-                color: #33AAFF;
+                color: #4caf50;
                 background: #fff;
-                border: 1px solid #33AAFF;
+                border: 1px solid #4caf50;
                 transition: 0.2s;
             }
             .reset-button {
