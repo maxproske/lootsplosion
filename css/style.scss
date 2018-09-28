@@ -13,12 +13,11 @@ html {
 
 /* Citations and Style Guide */
 .citations, .style-guide {
-    margin-bottom: 6rem;
-
+    max-width: 40rem;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 0.3rem;
-    margin: 1rem;
+    margin: 0 auto;
     padding: 2rem;
     box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 
@@ -26,6 +25,24 @@ html {
         flex: 1 100%;
         margin: 0;
         font-size: 1.75rem;
+    }
+}
+
+*:focus {
+    box-shadow: 0 0 1.5rem #33AAFF;
+    text-decoration: none;
+}
+
+.content {
+    margin-bottom: 5rem;
+}
+
+.citations {
+    ul {
+        line-height: 1.5rem;
+        li {
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -81,18 +98,16 @@ html {
         .submit-button {
             width: 12rem;
             height: 2rem;
-            background-color: #07C;
+            background-color: #fff;
             border-radius: 0.3rem;
-            border: 1px solid #fff;
-            color: #fff;
+            border: 1px solid #333;
+            color: #333;
             cursor: pointer;
             font-weight: bold;
             padding: 8px 16px;
         }
         .submit-button:hover {
-            color: #33AAFF;
-            background: #fff;
-            border: 1px solid #33AAFF;
+            background: rgb(242, 225, 35);
             transition: 0.2s;
         }
         .reset-button {
@@ -374,14 +389,12 @@ body {
             transition: 0.2s;
         }
         a:hover {
-            color: #fff;
+            color: #33AAFF;
             transition: 0.2s;
             text-decoration: underline;
         }
         a:focus {
-            color: #fff;
-            box-shadow: 0 0 1rem rgb(242, 225, 35);
-            border-radius: 0.3rem;
+            color: #33AAFF;
             text-decoration: none;
         }
 
