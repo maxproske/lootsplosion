@@ -132,6 +132,13 @@ html {
         .text-input-field, .select-input-field {
             flex: 1 100%;
             margin-bottom: 2rem;
+
+            &:hover {
+                border: 1px solid #33AAFF;
+            }
+            &:focus {
+                box-shadow: 0 0 10px #33AAFF;
+            }
         }
     }
 }
@@ -571,18 +578,10 @@ body {
 
             // The text input shows us when it has been interacted with, both on hover and focus
             input:hover {
-                border: 1px solid rgb(242, 225, 35);
+                border: 1px solid #33AAFF;
             }
             input:focus {
-                box-shadow: 0 0 10px rgb(242, 225, 35);
-            }
-
-            pre.html:before {
-                background: #333;
-            }
-
-            pre.css:before {
-                background: #ff9800;
+                box-shadow: 0 0 10px #33AAFF;
             }
 
             section {
