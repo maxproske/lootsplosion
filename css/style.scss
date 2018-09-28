@@ -26,6 +26,10 @@ html {
         margin: 0;
         font-size: 1.75rem;
     }
+
+    .image-citations, .code-citations, .text-citations {
+        margin-top: 2rem;
+    }
 }
 
 *:focus {
@@ -60,7 +64,7 @@ html {
         font-size: 1.75rem;
     }
 
-    .payment {
+    .payment, .cart {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -70,12 +74,30 @@ html {
         background-color: #fff;
         border-radius: 0.3rem;
         margin: 1rem;
-        padding: 1rem 1rem 3rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 
-        .payment-title {
+        .payment-title, .cart-title {
             font-size: 1.5rem;
             margin-bottom: 2rem;
+        }
+
+        .cart-item {
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            justify-content: space-between;
+
+            .cart-item-title {
+                margin: 0;
+            }
+        }
+
+        .cart-total {
+            border-top: 1px solid #ccc;
+            text-align: left;
+            margin: 0 2rem;
         }
 
         // The label and text input look visually related
@@ -311,6 +333,9 @@ html {
     }
     .add-to-cart {
         width: 80%;
+    }
+    .cart-item-title {
+        flex: 1 100%;
     }
 }
 
