@@ -1,8 +1,12 @@
 
-## Code snippets
-- https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/
-- https://webgl2fundamentals.org/webgl/lessons/webgl2-whats-new.html
-- https://css-tricks.com/snippets/html/comments-in-html/
+# IAT-339 Fall 2018 Group 9
 
-## Sticky sidebar
-- https://dev.to/claireparker/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7
+## Lootsplosion
+
+Purchase loot boxes for all your favourite video games at our convenient, centralized hub, at the most attractive prices on the market.
+
+- Browse loot boxes for all games, with details page for each product.
+- Filter results by game, price, and type (cosmetic, EXP boosts, etc.).
+- Virtual shopping cart and checkout system.
+- Connect Steam, Battle.net, Origin accounts to deposit purchases.
+- Loyalty center to rewards buyers for repeat purchases and referrals.
