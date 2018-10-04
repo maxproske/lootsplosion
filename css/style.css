@@ -23,6 +23,7 @@ h6 {
 	font-family: "Droid Serif", Helvetica, Arial, sans-serif;
 }
 
+.welcome,
 .citations,
 .style-guide {
 	max-width: 42rem;
@@ -34,6 +35,7 @@ h6 {
 	box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 }
 
+.welcome-title,
 .citations-title,
 .style-guide-title {
 	flex: 1 100%;
