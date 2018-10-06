@@ -219,8 +219,104 @@ h6 {
 	box-shadow: 0 0 10px #33AAFF;
 }
 
+/* Product Details
+   ========================================================================== */
 
-/* Product Listing */
+.view .view-product,
+.view .related-products {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.view .view-product-title,
+.view .related-products-title {
+	flex: 1 100%;
+	margin: 3rem 1rem 0 1rem;
+	font-size: 1.75rem;
+}
+
+.view .details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	margin: 1rem;
+	padding: 1rem;
+
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
+}
+
+.view .details-title {
+	flex: 1 100%;
+	margin: 1rem 0 0 1rem;
+	font-size: 1.5rem;
+}
+
+.view .details-info {
+	margin: 1rem;
+}
+
+.view .product-preview {
+	flex: 1;
+}
+
+.view .product-description {
+	flex: 2;
+	line-height: 1.5rem;
+}
+
+.view .product-price {
+	color: #4caf50;
+	font-weight: bold;
+}
+
+.view .product-price del {
+	color: #333;
+	font-weight: initial;
+}
+
+.view .product-preview .item {
+	margin: 0;
+}
+
+.view .product-preview .caption {
+	line-height: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.view .product-preview .media {
+	object-fit: cover;
+	object-position: center top;
+	width: 100%;
+	border-radius: 0.3rem;
+}
+
+.view .buy-button {
+	display: block;
+	max-width: 8rem;
+	background-color: #fff;
+	color: #333;
+	border-radius: 0.3rem;
+	padding: 1rem;
+	border: 1px solid #333;
+	text-decoration: none;
+	text-align: center;
+}
+
+.view .buy-button:hover {
+	color: #333;
+	background-color: #f2e123;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+
+/* Homepage Product Listing
+   ========================================================================== */
 
 .product-listing {
 	margin-bottom: 6rem;
@@ -239,7 +335,7 @@ h6 {
 	font-size: 1.75rem;
 }
 
-.product-listing .category .in-stock {
+.in-stock {
 	display: flex;
 	flex-grow: 1;
 	margin: 0;
@@ -249,7 +345,12 @@ h6 {
 	/* Maximum 3 items per row */
 }
 
-.product-listing .category .product {
+.in-stock:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.product {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -265,18 +366,18 @@ h6 {
 	box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
 }
 
-.product-listing .category .product:hover {
+.product:hover {
 	transition: box-shadow 0.1s ease-in-out;
 	box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 	/* Hover animation */
 }
 
-.product-listing .category .product:hover .item .media {
+.product:hover .item .media {
 	filter: contrast(90%);
 	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
 }
 
-.product-listing .category .product .product-title {
+.product .product-title {
 	flex-basis: 3rem;
 	/* Account for longer titles spanning multiple lines */
 	padding: 1rem;
@@ -284,13 +385,13 @@ h6 {
 	order: 2;
 }
 
-.product-listing .category .product .item {
+.product .item {
 	margin: 0;
 	/* Full-width media */
 	order: 1;
 }
 
-.product-listing .category .product .item .media {
+.product .item .media {
 	filter: contrast(70%);
 	display: block;
 	object-fit: cover;
@@ -301,26 +402,26 @@ h6 {
 	border-top-right-radius: 0.3rem;
 }
 
-.product-listing .category .product .item .price {
+.product .item .price {
 	padding: 1rem;
 	margin: 0;
 	color: #4caf50;
 	font-weight: bold;
 }
 
-.product-listing .category .product .item .price .original-price {
+.product .item .price .original-price {
 	color: #333;
 	font-size: 0.7rem;
 }
 
-.product-listing .category .product .item .price .discount {
+.product .item .price .discount {
 	font-style: normal;
 	background-color: red;
 	padding: 0.25rem;
 	color: #fff;
 }
 
-.product-listing .category .product .add-to-cart {
+.product .add-to-cart {
 	order: 3;
 	align-self: center;
 	flex-basis: 1rem;
@@ -333,7 +434,7 @@ h6 {
 	text-decoration: none;
 }
 
-.product-listing .category .product .add-to-cart:hover {
+.product .add-to-cart:hover {
 	color: #333;
 	background-color: #f2e123;
 	border: 1px solid #333;
@@ -375,7 +476,7 @@ h6 {
 		padding: 1rem;
 	}
 	html body main {
-		padding: 2rem 0.5rem;
+		padding: 0 0.5rem;
 	}
 	html body header {
 		padding-top: 1rem;
