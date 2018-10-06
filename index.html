@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Lootsplosion - Home</title>
+		<title>Lootsplosion - Style Guide</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Citation: Normalize.css -->
 		<link rel="stylesheet" href="css/normalize.min.css">
@@ -19,46 +19,117 @@
 			<nav id="menu" aria-label="site-menu">
 				<ul>
                     <li class="active"><a href="./">Home</a></li>
-                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./about.html">About</a></li>
 					<li><a href="./style-guide.html">Style Guide</a></li>
 					<li><a href="./citations.html">Citations</a></li>
 				</ul>
 			</nav>
 		</header>
         
-		<main id="content">
-            <section class="welcome">
-                <h2 class="welcome-title">Welcome to Lootsplosion!</h2>
-                <p>Purchase loot boxes for all your favourite video games at our convenient, centralized hub, at the <em>most attractive prices on the market!</em></p> 
-                
-                <section class="updates">
-                    <h3 class="updates-title">Updates</h3>
-                    <p>Read these updates for the BEST deals EVER!</p>
+		<main id="content" class="product-listing">
 
-                    <article class="update">
-                        <h4 class="update-title">Game on! Score the best deals ⚽</h4>
-                        <p>October 3, 2018</p>
-                        <p>Visit our WeeklySale to score great Steam game sales, countless Uplay titles, and Origin originals. <a href="#">Read more...</a></p>
+            <section class="category featured">
+                <h2 class="category-title">Featured Product</h2>
+                <a href="./product.html#overwatch" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Overwatch - 10 Loot Boxes</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/overwatch.jpg" alt="Overwatch 10 Loot Boxes">
+                            <figcaption class="price"><del class="original-price">$26.99</del> $23.79</figcaption>
+                        </figure>
                     </article>
-                    <article class="update">
-                        <h4 class="update-title">50% Off Overwatch Deluxe! Look no further</h4>
-                        <p>October 1, 2018</p>
-                        <p>Save 50% on Overwatch Digital Deluxe Edition! Are you looking for something new to play? Or maybe you want to play a co-op game with a friend and they don't have their own copy? <a href="#">Read more...</a></p>
+                </a>
+            </section>
+
+            <section class="category">
+                <h2 class="category-title">Most Popular</h2>
+
+                <a href="./product.html#starwars" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Star Wars Battlefront II - 40,000 Credits</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/starwars.jpg" alt="Star Wars Battlefront II Deluxe Edition">
+                            <figcaption class="price"><del class="original-price">$25.99</del> $22.79</figcaption>
+                        </figure>
                     </article>
-                </section>
+                </a>
 
-                <article class="about">
-                    <h3 class="about-title">About Us</h3>
-                    <p>The phrase &quot;Loot-splosion&quot; was coined by the Borderlands video game franchise, that describes a rare and veritable explosion of guns, ammunition, money, and other loot, in reward for defeating a boss.</p>
-                    <p>We pride ourselves on being More convenient, and faster than logging into a game and purchasing throgh their cash shop. Can purchase from mobile store. Most attractive prices online.</p>
-                    <p>You can browse loot boxes for all games, with details page for each product. Filter results by game, price, and type (cosmetic, EXP boosts, etc.). Use our virtual shopping cart and checkout system. Connect Steam, Battle.net, Origin accounts to deposit purchases.  Check out our Loyalty center to rewards buyers for repeat purchases and referrals. <em>And more!</em></p>
-                </article>
+                <a href="./product.html#pubg" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">PLAYERUNKNOWN'S BATTLEGROUNDS - Random Skin</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/pubg.jpg" alt="PLAYERUNKNOWN'S BATTLEGROUNDS Random Skin">
+                            <figcaption class="price"><del class="original-price">$4.00</del> $2.79</figcaption>
+                        </figure>
+                    </article>
+                </a>
+            </section>
 
-                <article class="contact">
-                    <h3 class="contact-title">Contact Us</h3>
-                    <p>Interested in vending your microtransactions through Lootsplosion? Contact us at /email/ to get started with our services, and take your business global!</p>
-                </article>
-            </section> 
+            <section class="category">
+                <h2 class="category-title">Loot Under $10</h2>
+
+                <a href="./product.html#gw2" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Guild Wars 2 - 2000 Gems</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/gw2.png" alt="Guild Wars 2 2000 Gems">
+                            <figcaption class="price"><del class="original-price">$12.99</del> $9.79</figcaption>
+                        </figure>
+                    </article>
+                </a>
+
+                <a href="./product.html#hearthstone" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Hearthstone - 12 Card Packs</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/hearthstone.jpg" alt="Hearthstone - 4 Card Packs">
+                            <figcaption class="price"><del class="original-price">$11.99</del> $9.29</figcaption>
+                        </figure>
+                    </article>
+                </a>
+
+                <a href="./product.html#csgo" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Counter-Strike: GO - 4 Random Skins</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/csgo.jpg" alt="Counter-Strike: Global Offensive - 4 Random Skins">
+                            <figcaption class="price"><del class="original-price">$6.99</del> $5.99</figcaption>
+                        </figure>
+                    </article>
+                </a>
+
+                <a href="./product.html#fortnite" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Fortnite - Bomber Skin</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/fortnite.jpg" alt="Fortnite - Bomber Skin">
+                            <figcaption class="price"><del class="original-price">$5.99</del> $4.89</figcaption>
+                        </figure>
+
+                    </article>
+                </a>
+
+                <a href="./product.html#gtav" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Grand Theft Auto V - Red Shark Cash Card</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/gtav.jpg" alt="Grand Theft Auto V - Red Shark Cash Card">
+                            <figcaption class="price"><del class="original-price">$10.99</del> $9.49</figcaption>
+                        </figure>
+                    </article>
+                </a>
+
+                <a href="./product.html#destiny2" class="in-stock">
+                    <article class="product">
+                        <h3 class="product-title">Destiny 2 - 1000 Silver</h3>
+                        <figure class="item">
+                            <img class="media" src="img/product/destiny2.jpg" alt="Destiny 2 - 1000 Silver">
+                            <figcaption class="price"><del class="original-price">$13.99</del> $9.89</figcaption>
+                        </figure>
+
+                    </article>
+                </a>
+            </section>
         </main>
         <footer>
             <p>&copy; Lootsplosion 2018</p>
