@@ -10,8 +10,75 @@ html {
 	background-color: #ececec;
 }
 
+
+/* Full-width video banner
+   ========================================================================== */
+
+.full-width-banner {
+	/* Citation: https://stackoverflow.com/questions/19713813/fade-image-to-transparent-like-a-gradient 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	background-image: url("../video/video.webm");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 60vh;
+	position: absolute;
+	z-index: -10;
+	*/
+}
+
+.fullscreen-bg,
+.fullscreen-bg__video {
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.fullscreen-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+	height: 60vh;
+}
+
+.fullscreen-bg__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.fullscreen-bg__video {
+		height: 300%;
+		top: -100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.fullscreen-bg__video {
+		height: 300%;
+		top: -120%;
+	}
+}
+@media (max-width: 42em) {
+	.fullscreen-bg {
+		background: url('../img/videoframe.jpg') center center / cover no-repeat;
+	}
+	.fullscreen-bg__video {
+		display: none;
+	}
+}
+
 .skip {
-	color: #ccc;
+	color: rgba(255,255,255,0.5);
 }
 
 h1,
@@ -163,11 +230,12 @@ h6 {
 	cursor: pointer;
 	font-weight: bold;
 	padding: 8px 16px;
+	box-shadow: -0.2rem 0.2rem #000;
 }
 
 .checkout .payment .submit-button:hover,
 .checkout .cart .submit-button:hover {
-	background: #f2e123;
+	background: #FFFF00;
 	transition: 0.2s;
 }
 
@@ -232,6 +300,7 @@ h6 {
 
 .view .view-product-title,
 .view .related-products-title {
+	color: #333;
 	flex: 1 100%;
 	margin: 3rem 1rem 0 1rem;
 	font-size: 1.75rem;
@@ -306,11 +375,12 @@ h6 {
 	border: 1px solid #333;
 	text-decoration: none;
 	text-align: center;
+	box-shadow: -0.2rem 0.2rem #000;
 }
 
 .view .buy-button:hover {
 	color: #333;
-	background-color: #f2e123;
+	background-color: #FFFF00;
 	border: 1px solid #333;
 	cursor: pointer;
 }
@@ -333,6 +403,7 @@ h6 {
 	flex: 1 100%;
 	margin: 3rem 0 0 1rem;
 	font-size: 1.75rem;
+	color: #333;
 }
 
 .in-stock {
@@ -373,8 +444,8 @@ h6 {
 }
 
 .product:hover .item .media {
-	filter: contrast(90%);
-	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
+	filter: brightness(30%);
+	transition: filter 0.3s cubic-bezier(0.42, 0.4, 0.21, 0.9);
 }
 
 .product .product-title {
@@ -389,10 +460,10 @@ h6 {
 	margin: 0;
 	/* Full-width media */
 	order: 1;
+	position: relative;
 }
 
 .product .item .media {
-	filter: contrast(70%);
 	display: block;
 	object-fit: cover;
 	object-position: center top;
@@ -403,15 +474,28 @@ h6 {
 }
 
 .product .item .price {
+	filter: opacity(0);
+	position: absolute;
+	left: calc(50% - 4rem);
+	top: calc(50% - 1rem);
+	border: 1px solid white;
+	border-radius: 0.3rem;
+	background-color: rgba(0,0,0,0.8);
 	padding: 1rem;
 	margin: 0;
 	color: #4caf50;
 	font-weight: bold;
 }
 
+.product:hover .price {
+	display: inherit;
+	filter: opacity(1);
+	transition: filter 0.3s cubic-bezier(0.42, 0.4, 0.21, 0.9);
+}
+
 .product .item .price .original-price {
-	color: #333;
-	font-size: 0.7rem;
+	color: #fff;
+	font-size: 1rem;
 }
 
 .product .item .price .discount {
@@ -436,7 +520,7 @@ h6 {
 
 .product .add-to-cart:hover {
 	color: #333;
-	background-color: #f2e123;
+	background-color: #FFFF00;
 	border: 1px solid #333;
 	cursor: pointer;
 }
@@ -537,11 +621,10 @@ body header h1 {
 
 body header .banner {
 	max-width: 100%;
-	filter: opacity(85%);
 }
 
 body header .banner:hover {
-	filter: opacity(100%);
+	filter: brightness(120%);
 	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
 }
 
@@ -563,18 +646,20 @@ body header nav ul li {
 body header nav ul li a {
 	display: block;
 	color: #333;
-	border: 1px solid #333;
+	border: 1px solid #000;
 	background-color: #fff;
 	padding: 1rem;
 	border-radius: 0.3rem;
 	text-decoration: none;
+	box-shadow: -0.2rem 0.2rem #000;
 }
 
 body header nav ul li a:hover {
 	color: #333;
-	background-color: #f2e123;
+	background-color: #FFFF00;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
+	box-shadow: -0.2rem 0.2rem #000;
 }
 
 body header nav ul li.active a {
@@ -582,6 +667,10 @@ body header nav ul li.active a {
 	background-color: #f2e123;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
+}
+
+li.active a:hover {
+	background-color: #FFFF00;
 }
 
 body main {
@@ -856,7 +945,6 @@ body .outline-button-bg {
 }
 
 body footer {
-	color: #333;
 	background: transparent;
 	text-align: center;
 	vertical-align: middle;
