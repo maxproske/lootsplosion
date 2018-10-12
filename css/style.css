@@ -3,9 +3,9 @@
 
 * {
 	/* Include padding and border in all elements' total width and height. */
-	-webkit-box-sizing: inherit; 
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *:focus {
@@ -32,9 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 .fullscreen-bg,
 .fullscreen-bg__video {
 	position: absolute;
-	top: 0; 
-	right: 0; 
-	bottom: 0; 
+	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 }
 .fullscreen-bg {
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Cards
    ========================================================================== */
 
-.welcome, .citations, .style-guide {
+.welcome, .citations, .style-guide, .contact-us {
 	max-width: 42rem; /* Constrain main width */
 	border: 1px solid #ccc;
 	background-color: #fff;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
+
 	margin: 1rem;
 	padding: 1rem;
 
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 	justify-content: space-between;
 }
 
-.checkout .payment .cart-item .cart-item-title, 
+.checkout .payment .cart-item .cart-item-title,
 .checkout .cart .cart-item .cart-item-title {
 	margin: 0;
 }
@@ -420,8 +420,11 @@ h1, h2, h3, h4, h5, h6 {
 .checkout .cart .select-input-field {
 	border: 1px solid #c6c7cc;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-	padding: 0.75rem;
 	width: 12rem;
+}
+
+.text-input-field {
+	padding: 0.75rem;
 }
 
 .checkout .payment .submit-button,
@@ -442,6 +445,33 @@ h1, h2, h3, h4, h5, h6 {
 .checkout .cart .submit-button:hover {
 	background: #FFFF00;
 	transition: 0.2s;
+}
+
+.confirmation-button {
+	width: 12rem;
+	height: 2rem;
+	background-color: #fff;
+	border-radius: 0.3rem;
+	border: 1px solid #333;
+	color: #333;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 8px 16px;
+	box-shadow: -0.2rem 0.2rem #000;
+	margin-top: 2rem;
+	transition: 0.2s;
+}
+
+.confirmation-button:hover {
+	background: #FFFF00;
+}
+
+.contact-email, .contact-title, .contact-body {
+	width: 100%;
+}
+
+.contact-body {
+	height: 10rem;
 }
 
 .checkout .payment .reset-button,
