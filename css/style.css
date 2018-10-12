@@ -68,6 +68,31 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+/* Static banner images
+   ========================================================================== */
+
+.banner-image {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60vh;
+	position: absolute;
+	z-index: -10;
+}
+.banner-image.banner-image-1 {
+	background-image: url("../img/banners/helios.jpg");
+	background-position: center right;
+}
+.banner-image.banner-image-2 {
+	background-image: url("../img/banners/windshear-waste.jpg");
+	background-position: center center;
+}
+
 /* Cards
    ========================================================================== */
 
