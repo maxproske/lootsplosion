@@ -1,10 +1,30 @@
 .contact-email,
 .contact-title,
 .contact-body {
-	width: 100%;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 .contact-body {
 	height: 10rem;
 	resize: vertical;
+}
+
+.confirmation-button {
+	width: 12rem;
+	height: 2rem;
+	background-color: #fff;
+	border-radius: 0.3rem;
+	border: 1px solid #333;
+	color: #333;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 8px 16px;
+	box-shadow: -0.2rem 0.2rem #000;
+	margin-top: 2rem;
+	transition: 0.2s;
+}
+
+.confirmation-button:hover {
+	background: #FFFF00;
 }

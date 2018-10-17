@@ -1,4 +1,43 @@
-
+/* Homepage video banner
+   ========================================================================== */
+   .fullscreen-bg,
+   .fullscreen-bg__video {
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+   }
+   .fullscreen-bg {
+       z-index: -1; /* Display under buttons */
+       max-height: 60vh; /* Fill up to 60% of device view height */
+       -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); /* Fade video to bottom */
+       mask-image: linear-gradient(linear, left top, left bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+   }
+   .fullscreen-bg__video {
+       width: 100%;
+       height: 100%;
+   }
+   @media (min-aspect-ratio: 16/9) {
+       .fullscreen-bg__video {
+           height: 300%; /* Stretch image on 16:9 aspect ratio */
+           top: -100%; /* Compensate */
+       }
+   }
+   @media (max-aspect-ratio: 16/9) {
+       .fullscreen-bg__video {
+           height: 300%; /* Squash video on non-16:9 aspect ratios */
+           top: -120%; /* Compensate */
+       }
+   }
+   @media (max-width: 42em) {
+       .fullscreen-bg {
+           background: none; /* TODO(max): Replace with still image? url('../img/videoframe.jpg') center center / cover no-repeat; */
+       }
+       .fullscreen-bg__video {
+           display: none; /* Hide video on mobile */
+       }
+   }
 
 /* Homepage Product Listing
    ========================================================================== */
@@ -120,26 +159,6 @@
 	color: #fff;
 }
 
-.product .add-to-cart {
-	order: 3;
-	align-self: center;
-	flex-basis: 1rem;
-	color: #333;
-	border-radius: 0.3rem;
-	padding: 1rem;
-	margin: 0 0 1rem 0;
-	border: 1px solid #333;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-.product .add-to-cart:hover {
-	color: #333;
-	background-color: #FFFF00;
-	border: 1px solid #333;
-	cursor: pointer;
-}
-
 
 /* Featured
    ========================================================================== */
@@ -201,10 +220,4 @@
 
 .product-listing .category.featured .product .item .price {
 	font-size: 1.5rem;
-}
-
-.product-listing .category.featured .product .add-to-cart {
-	flex-basis: 2rem;
-	width: 10rem;
-	margin: 0 0 2rem 0;
 }
