@@ -1,0 +1,10 @@
+.contact-email,
+.contact-title,
+.contact-body {
+	width: 100%;
+}
+
+.contact-body {
+	height: 10rem;
+	resize: vertical;
+}
