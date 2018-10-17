@@ -78,17 +78,17 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 1rem;
 		width: 85%;
 	}
-	html body header nav ul li {
+	header nav ul li {
 		width: 100%;
 		padding: 0 1rem;
 	}
-	html body header nav ul li a {
+	header nav ul li a {
 		padding: 1rem;
 	}
-	html body main {
+	main {
 		padding: 0 0.5rem;
 	}
-	html body header {
+	header {
 		padding-top: 1rem;
 	}
 	.cart-item-title {
@@ -125,7 +125,7 @@ body {
 	color: #333;
 }
 
-body header {
+header {
 	padding-top: 4rem;
 	background-color: transparent;
 	color: #fff;
@@ -133,20 +133,20 @@ body header {
 	vertical-align: middle;
 }
 
-body header h1 {
+header h1 {
 	display: none;
 }
 
-body header .banner {
+header .banner {
 	max-width: 100%;
 }
 
-body header .banner:hover {
+header .banner:hover {
 	filter: brightness(120%);
 	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
 }
 
-body header nav ul {
+header nav ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -155,13 +155,13 @@ body header nav ul {
 	list-style-type: none;
 }
 
-body header nav ul li {
+header nav ul li {
 	margin: 0.25rem;
 	display: block;
 	width: 9rem;
 }
 
-body header nav ul li a {
+header nav ul li a {
 	display: block;
 	color: #333;
 	border: 1px solid #000;
@@ -172,7 +172,7 @@ body header nav ul li a {
 	box-shadow: -0.2rem 0.2rem #000;
 }
 
-body header nav ul li a:hover {
+header nav ul li a:hover {
 	color: #333;
 	background-color: #FFFF00;
 	-webkit-transition-duration: 0.2s;
@@ -180,7 +180,7 @@ body header nav ul li a:hover {
 	box-shadow: -0.2rem 0.2rem #000;
 }
 
-body header nav ul li.active a {
+header nav ul li.active a {
 	color: #333;
 	background-color: #f2e123;
 	-webkit-transition-duration: 0.2s;
@@ -191,24 +191,24 @@ li.active a:hover {
 	background-color: #FFFF00;
 }
 
-body main {
+main {
 	max-width: 80rem;
 	margin: 0 auto;
 }
 
-body main a {
+main a {
 	color: #07C;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
 }
 
-body main a:hover {
+main a:hover {
 	color: #33AAFF;
 	transition: 0.2s;
 	text-decoration: underline;
 }
 
-body main a:focus {
+main a:focus {
 	color: #33AAFF;
 	text-decoration: none;
 }
@@ -216,48 +216,48 @@ body main a:focus {
 /* Misc
    ========================================================================== */
 
-body .container {
+.container {
 	color: #59626a;
 }
 
-body div.grid .grid-row {
+div.grid .grid-row {
 	margin-bottom: 1rem;
 }
 
-body div.grid .grid-row .col {
+div.grid .grid-row .col {
 	margin-right: 2%;
 	margin-bottom: 1rem;
 	width: 20%;
 	display: inline-block;
 }
 
-body .color-display.primaryColor {
+.color-display.primaryColor {
 	background: #f2e123;
 	margin-bottom: 1rem;
 }
 
-body .color-display.secondaryColor {
+.color-display.secondaryColor {
 	background: #33AAFF;
 	margin-bottom: 1rem;
 }
 
-body .color-display.priceColor {
+.color-display.priceColor {
 	background: #4caf50;
 	margin-bottom: 1rem;
 }
 
 
-body .color-display.accentColor {
+.color-display.accentColor {
 	background: #333;
 	margin-bottom: 1rem;
 }
 
-body .color-display.dividerColor {
+.color-display.dividerColor {
 	background: #ccc;
 	margin-bottom: 1rem;
 }
 
-body .color-display {
+.color-display {
 	width: 100%;
 	display: block;
 	color: #fff;
@@ -281,8 +281,7 @@ body .color-name {
 	margin-bottom: 1rem;
 }
 
-body .color-display,
-body .outline-button-bg {
+body .color-display {
 	border-radius: 0.3rem 0.3rem 0 0;
 }
 
@@ -304,4 +303,41 @@ body #imagery-and-art-direction figure figcaption {
 
 body #imagery-and-art-direction img {
 	width: 100%;
+}
+
+.button,
+.warning-button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: -0.2rem 0.2rem #000;
+}
+
+.button:hover,
+.button:focus,
+.warning-button:hover,
+.warning-button:focus {
+    color: #333;
+    background-color: #FFFF00;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.warning-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.warning-button:hover,
+.warning-button:focus {
+    background-color: #e95555;
+    color: #fff;
+}
+
+.button-block {
+    display: block;
 }

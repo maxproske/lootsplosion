@@ -79,29 +79,8 @@
 	padding: 0.75rem;
 }
 
-.checkout .payment .submit-button,
-.checkout .cart .submit-button {
-	width: 12rem;
-	height: 2rem;
-	background-color: #fff;
-	border-radius: 0.3rem;
-	border: 1px solid #333;
-	color: #333;
-	cursor: pointer;
-	font-weight: bold;
-	padding: 8px 16px;
-	box-shadow: -0.2rem 0.2rem #000;
-}
 
-.checkout .payment .submit-button:hover,
-.checkout .cart .submit-button:hover {
-	background: #FFFF00;
-	transition: 0.2s;
-}
-
-
-.checkout .payment .reset-button,
-.checkout .cart .reset-button {
+.reset-button {
 	background-color: #af4c4c;
 	border-radius: 0.3rem;
 	border: 1px solid #fff;
@@ -111,8 +90,7 @@
 	padding: 8px 16px;
 }
 
-.checkout .payment .reset-button:hover,
-.checkout .cart .reset-button:hover {
+.reset-button:hover {
 	color: #af4c4c;
 	background: #fff;
 	border: 1px solid #af4c4c;
