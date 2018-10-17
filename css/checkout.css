@@ -1,7 +1,7 @@
 /* Checkout
    ========================================================================== */
 
-   .checkout {
+.checkout {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 6rem;
@@ -9,13 +9,14 @@
 	margin: 0 auto;
 }
 
-.checkout .checkout-title {
+.checkout-title {
 	flex: 1 100%;
 	margin: 3rem 0 0 1rem;
 	font-size: 1.75rem;
 }
 
-.checkout .payment, .checkout .cart {
+.payment,
+.cart {
 	display: flex;
 	text-align: center;
 	flex-direction: column;
@@ -28,12 +29,13 @@
 	box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 }
 
-.payment-title, .cart-title {
+.payment-title,
+.cart-title {
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
 }
 
-.checkout .payment .cart-item, .checkout .cart .cart-item {
+.cart-item {
 	padding: 0 2rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -41,87 +43,48 @@
 	justify-content: space-between;
 }
 
-.checkout .payment .cart-item .cart-item-title,
-.checkout .cart .cart-item .cart-item-title {
+.cart-item-title {
 	margin: 0;
 }
 
-.checkout .payment .cart-total, .checkout .cart .cart-total {
+.cart-total {
 	border-top: 1px solid #ccc;
 	text-align: left;
 	margin: 0 2rem;
 }
 
-.checkout .payment .text-input-label,
-.checkout .payment .select-input-label,
-.checkout .cart .text-input-label,
-.checkout .cart .select-input-label {
+.text-input-label,
+.select-input-label {
 	display: block;
 	font-weight: bold;
-	margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+	flex: 1 100%;
 }
 
-.checkout .payment .radio-input-label,
-.checkout .cart .radio-input-label {
+.radio-input-label,
+.radio-input-label {
 	display: inline-block;
 }
 
-.checkout .payment .text-input-field,
-.checkout .payment .select-input-field,
-.checkout .cart .text-input-field,
-.checkout .cart .select-input-field {
+.text-input-field,
+.select-input-field {
 	border: 1px solid #c6c7cc;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-	width: 12rem;
+    width: 12rem;
+    flex: 1 100%;
+	margin-bottom: 2rem;
 }
 
 .text-input-field {
 	padding: 0.75rem;
 }
 
-
-.reset-button {
-	background-color: #af4c4c;
-	border-radius: 0.3rem;
-	border: 1px solid #fff;
-	color: #fff;
-	cursor: pointer;
-	font-weight: bold;
-	padding: 8px 16px;
-}
-
-.reset-button:hover {
-	color: #af4c4c;
-	background: #fff;
-	border: 1px solid #af4c4c;
-	transition: 0.2s;
-}
-
-.checkout .payment .text-input-label,
-.checkout .payment .select-input-label,
-.checkout .cart .text-input-label,
-.checkout .cart .select-input-label {
-	flex: 1 100%;
-}
-
-.checkout .payment .text-input-field,
-.checkout .payment .select-input-field,
-.checkout .cart .text-input-field,
-.checkout .cart .select-input-field {
-	flex: 1 100%;
-	margin-bottom: 2rem;
-}
-
-.checkout .payment .text-input-field:hover,
-.checkout .payment .select-input-field:hover,
-.checkout .cart .text-input-field:hover,
-.checkout .cart .select-input-field:hover {
+.text-input-field:hover,
+.select-input-field:hover {
 	border: 1px solid #33AAFF;
 }
 
-.checkout .payment .text-input-field:focus,
-.checkout .payment .select-input-field:focus,
-.checkout .cart .text-input-field:focus,
-.checkout .cart .select-input-field:focus {
+.text-input-field:focus,
+.select-input-field:focus {
 	box-shadow: 0 0 10px #33AAFF;
 }
