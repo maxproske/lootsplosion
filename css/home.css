@@ -112,7 +112,7 @@
 }
 
 .product .product-title {
-	flex-basis: 3rem;
+	flex-basis: 7rem;
 	/* Account for longer titles spanning multiple lines */
 	padding: 1rem;
 	margin: 0;
