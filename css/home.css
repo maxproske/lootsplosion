@@ -76,6 +76,11 @@
 	color: inherit;
 }
 
+
+.in-stock {
+	margin: 1rem;
+}
+
 .product {
 	display: flex;
 	flex-direction: column;
@@ -88,7 +93,7 @@
 	border: 1px solid #ccc;
 	background-color: #fff;
 	border-radius: 0.3rem;
-	margin: 1rem;
+
 	box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
 }
 
