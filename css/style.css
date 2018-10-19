@@ -355,13 +355,6 @@ h1, h2, h3, h4, h5, h6 {
 .featured .in-stock .category-title {
 	max-height: 800px;
 }
-
-.masonry {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 10rem 10rem;
-}
-
 .featured .in-stock {
 	overflow: hidden;
 }
