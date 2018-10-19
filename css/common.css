@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skip {
     color: rgba(255, 255, 255, 0.5);
-    display: block;
+    display: inline;
 	margin-bottom: 2rem;
 }
 
@@ -73,12 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries
    ========================================================================== */
 
-@media (max-width: 38em) {
+@media (max-width: 60em) {
 	.banner {
 		padding: 1rem;
 		width: 85%;
 	}
 	header nav ul li {
+		flex: 1 40%;
 		width: 100%;
 		padding: 0 1rem;
 	}
@@ -141,7 +142,9 @@ header .banner {
 	max-width: 100%;
 }
 
-header .banner:hover {
+header .banner-link:focus,
+header .banner-link:active,
+header .banner-link:hover {
 	filter: brightness(120%);
 	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
 }
@@ -172,12 +175,14 @@ header nav ul li a {
 	box-shadow: -0.2rem 0.2rem #000;
 }
 
+header nav ul li a:focus,
+header nav ul li a:active,
 header nav ul li a:hover {
 	color: #333;
 	background-color: #FFFF00;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
-	box-shadow: -0.2rem 0.2rem #000;
+	box-shadow: -0.4rem 0.4rem #000;
 }
 
 header nav ul li.active a {
@@ -187,6 +192,8 @@ header nav ul li.active a {
 	transition-duration: 0.2s;
 }
 
+li.active a:focus,
+li.active a:active,
 li.active a:hover {
 	background-color: #FFFF00;
 }
