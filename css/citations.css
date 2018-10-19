@@ -1,0 +1,19 @@
+/* Citations
+   ========================================================================== */
+
+.citations ul {
+	line-height: 1.5rem;
+}
+
+.citations ul li {
+	margin-bottom: 1rem;
+}
+
+.image-citations,
+.code-citations,
+.text-citations,
+.image-citations,
+.code-citations,
+.text-citations {
+	margin-top: 2rem;
+}

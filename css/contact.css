@@ -1,0 +1,15 @@
+.contact-email,
+.contact-title,
+.contact-body {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact-body {
+	height: 10rem;
+	resize: vertical;
+}
+
+.confirmation-button {
+	margin-top: 2rem;
+}

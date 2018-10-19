@@ -1,0 +1,343 @@
+* {
+	/* Include padding and border in all elements' total width and height. */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	box-shadow: 0 0 1.5rem #33AAFF;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: #ececec;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Droid Serif", "Open Sans", Arial, sans-serif;
+}
+
+.skip {
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+	margin-bottom: 2rem;
+}
+
+/* Cards
+   ========================================================================== */
+
+.welcome,
+.citations,
+.style-guide,
+.contact-us {
+	max-width: 42rem; /* Constrain main width */
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 0.3rem;
+	margin: 0 auto;
+	padding: 2rem;
+	box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
+}
+.welcome-title, .citations-title, .style-guide-title {
+	flex: 1 100%;
+	margin: 0;
+	font-size: 1.75rem;
+}
+/* Static banner images
+   ========================================================================== */
+
+.banner-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60vh;
+	position: absolute;
+	z-index: -10;
+}
+.banner-image.banner-image-1 {
+	background-image: url("../img/banners/helios.jpg");
+	background-position: center right;
+}
+.banner-image.banner-image-2 {
+	background-image: url("../img/banners/windshear-waste.jpg");
+	background-position: center center;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+@media (max-width: 38em) {
+	.banner {
+		padding: 1rem;
+		width: 85%;
+	}
+	header nav ul li {
+		width: 100%;
+		padding: 0 1rem;
+	}
+	header nav ul li a {
+		padding: 1rem;
+	}
+	main {
+		padding: 0 0.5rem;
+	}
+	header {
+		padding-top: 1rem;
+	}
+	.cart-item-title {
+		flex: 1 100%;
+	}
+}
+
+.table-of-contents {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.table-of-contents .table-of-contents-title {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.table-of-contents ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 1rem;
+}
+
+.table-of-contents ul li {
+	line-height: 2rem;
+	overflow-wrap: break-word;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+header {
+	padding-top: 4rem;
+	background-color: transparent;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+header h1 {
+	display: none;
+}
+
+header .banner {
+	max-width: 100%;
+}
+
+header .banner:hover {
+	filter: brightness(120%);
+	transition: filter 0.1s cubic-bezier(0.42, 0.4, 0.21, 0.9);
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+header nav ul li {
+	margin: 0.25rem;
+	display: block;
+	width: 9rem;
+}
+
+header nav ul li a {
+	display: block;
+	color: #333;
+	border: 1px solid #000;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	text-decoration: none;
+	box-shadow: -0.2rem 0.2rem #000;
+}
+
+header nav ul li a:hover {
+	color: #333;
+	background-color: #FFFF00;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	box-shadow: -0.2rem 0.2rem #000;
+}
+
+header nav ul li.active a {
+	color: #333;
+	background-color: #f2e123;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+li.active a:hover {
+	background-color: #FFFF00;
+}
+
+main {
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+main a {
+	color: #07C;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+main a:hover {
+	color: #33AAFF;
+	transition: 0.2s;
+	text-decoration: underline;
+}
+
+main a:focus {
+	color: #33AAFF;
+	text-decoration: none;
+}
+
+/* Misc
+   ========================================================================== */
+
+.container {
+	color: #59626a;
+}
+
+div.grid .grid-row {
+	margin-bottom: 1rem;
+}
+
+div.grid .grid-row .col {
+	margin-right: 2%;
+	margin-bottom: 1rem;
+	width: 20%;
+	display: inline-block;
+}
+
+.color-display.primaryColor {
+	background: #f2e123;
+	margin-bottom: 1rem;
+}
+
+.color-display.secondaryColor {
+	background: #33AAFF;
+	margin-bottom: 1rem;
+}
+
+.color-display.priceColor {
+	background: #4caf50;
+	margin-bottom: 1rem;
+}
+
+
+.color-display.accentColor {
+	background: #333;
+	margin-bottom: 1rem;
+}
+
+.color-display.dividerColor {
+	background: #ccc;
+	margin-bottom: 1rem;
+}
+
+.color-display {
+	width: 100%;
+	display: block;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+body .color-title {
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #CED7DF;
+	display: block;
+}
+
+body .color-name {
+	font-size: 1rem;
+	color: #59626a;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+body .color-display {
+	border-radius: 0.3rem 0.3rem 0 0;
+}
+
+body footer {
+	background: transparent;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2em 0 1em 0;
+}
+
+body #imagery-and-art-direction figure {
+	margin: 0 0 2rem 0;
+	line-height: 1.5rem;
+}
+
+body #imagery-and-art-direction figure figcaption {
+	margin-top: 0.5rem;
+}
+
+body #imagery-and-art-direction img {
+	width: 100%;
+}
+
+.button,
+.warning-button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: -0.2rem 0.2rem #000;
+}
+
+.button:hover,
+.button:focus,
+.warning-button:hover,
+.warning-button:focus {
+    color: #333;
+    background-color: #FFFF00;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.warning-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.warning-button:hover,
+.warning-button:focus {
+    background-color: #e95555;
+    color: #fff;
+}
+
+.button-block {
+    display: block;
+}
