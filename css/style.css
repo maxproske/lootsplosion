@@ -352,16 +352,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Featured
    ========================================================================== */
 
-@media (max-width: 50em) {
-	.product-listing .category.featured .masonry {
-		display: flex;
-		flex-flow: row wrap;
-	}
-	.featured .in-stock {
-		flex: 1 40%;
-	}
-}
-
 .featured .in-stock .category-title {
 	max-height: 800px;
 }
