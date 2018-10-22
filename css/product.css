@@ -11,10 +11,11 @@
 
    .view .view-product-title,
    .view .related-products-title {
-       color: #333;
-       flex: 1 100%;
-       margin: 3rem 1rem 0 1rem;
-       font-size: 1.75rem;
+        color: #333;
+        flex: 1 100%;
+        margin: 3rem 1rem 0 1rem;
+        font-size: 1.75rem;
+	    font-family: 'Kanit', sans-serif;
    }
 
    .view .details {
