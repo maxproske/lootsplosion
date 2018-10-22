@@ -76,23 +76,14 @@
        border-radius: 0.3rem;
    }
 
-   .buy-button {
-       display: inline-block;
-       max-width: 8rem;
-       background-color: #fff;
-       color: #333;
-       border-radius: 0.3rem;
-       padding: 1rem;
-       margin-right: 1rem;
-       border: 1px solid #333;
-       text-decoration: none;
-       text-align: center;
-       box-shadow: -0.2rem 0.2rem #000;
+   .buy-link {
+        color: black;
+        text-decoration: none;
+        line-height: 1.15;
+        display: inline-block;
    }
 
-   .buy-button:hover {
-       color: #333;
-       background-color: #FFFF00;
-       border: 1px solid #333;
-       cursor: pointer;
+   .buy-link:hover {
+        color: black;
+        text-decoration: none;
    }
