@@ -1,16 +1,16 @@
 /* Product Details
    ========================================================================== */
 
-   .view .view-product,
-   .view .related-products {
+   .view-product,
+   .related-products {
        display: flex;
        flex-wrap: wrap;
        max-width: 80rem;
        margin: 0 auto;
    }
 
-   .view .view-product-title,
-   .view .related-products-title {
+   .view-product-title,
+   .related-products-title {
         color: #333;
         flex: 1 100%;
         margin: 3rem 1rem 0 1rem;
@@ -18,7 +18,7 @@
 	    font-family: 'Kanit', sans-serif;
    }
 
-   .view .details {
+   .details {
        display: flex;
        flex-wrap: wrap;
        justify-content: space-around;
@@ -32,45 +32,45 @@
        box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
    }
 
-   .view .details-title {
+   .details-title {
        flex: 1 100%;
        margin: 1rem 0 0 1rem;
        font-size: 1.5rem;
    }
 
-   .view .details-info {
+   .details-info {
        margin: 1rem;
    }
 
-   .view .product-preview {
+   .product-preview {
        flex: 1;
    }
 
-   .view .product-description {
+   .product-description {
        flex: 2;
        line-height: 1.5rem;
    }
 
-   .view .product-price {
+   .product-price {
        color: #4caf50;
        font-weight: bold;
    }
 
-   .view .product-price del {
+   .product-price del {
        color: #333;
        font-weight: initial;
    }
 
-   .view .product-preview .item {
+   .item {
        margin: 0;
    }
 
-   .view .product-preview .caption {
+   .caption {
        line-height: 1.5rem;
        margin-top: 0.5rem;
    }
 
-   .view .product-preview .media {
+   .media {
        object-fit: cover;
        object-position: center top;
        width: 100%;

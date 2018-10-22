@@ -1,49 +1,49 @@
 /* Style Guide
    ========================================================================== */
 
-.style-guide p {
+p {
 	line-height: 1.5rem;
 }
 
-.style-guide li {
+li {
 	line-height: 2rem;
 }
 
-.style-guide article {
+article {
 	padding-bottom: 1rem;
 	margin-bottom: 2.5rem;
 	border-bottom: 1px solid #eee;
 }
 
-.style-guide article a:hover {
+article a:hover {
 	color: #33AAFF;
 	transition: 0.2s;
 }
 
-.style-guide article code {
+article code {
 	background-color: #f7f7f7;
 	padding: 0 0.5rem;
 	border: 1px solid #ddd;
 	font-size: 0.8rem;
 }
 
-.style-guide article .html code {
+article .html code {
 	padding: 0.8rem;
 	display: block;
 	overflow: auto;
 }
 
-.style-guide section h5 {
+section h5 {
 	flex: 1 100%;
 }
 
-.style-guide section.listing {
+section.listing {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.style-guide article.product {
+article.product {
 	width: 42%;
 	min-height: 3rem;
 	background: #eee;
@@ -53,55 +53,55 @@
 	padding: 1rem;
 }
 
-.style-guide .persona {
+.persona {
 	width: 20rem;
 }
 
-.style-guide a {
+a {
 	display: inline-block;
 }
 
-.style-guide a figure {
+a figure {
 	margin: 0;
 }
 
-.style-guide a img:hover {
+a img:hover {
 	opacity: 0.7;
 }
 
-.style-guide form {
+form {
 	border: 1px solid #c6c7cc;
 	border-radius: 5px;
 	overflow: hidden;
 	width: 240px;
 }
 
-.style-guide fieldset {
+fieldset {
 	border: 0;
 	margin: 0;
 	padding: 0;
 }
 
-.style-guide label {
+label {
 	font-weight: bold;
 	margin-bottom: 0.5rem;
 }
 
-.style-guide .text-input-label {
+.text-input-label {
 	display: block;
 }
 
-.style-guide .radio-input-label {
+.radio-input-label {
 	display: inline-block;
 }
 
-.style-guide input {
+input {
 	border: 1px solid #c6c7cc;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
 	padding: 0.75rem;
 }
 
-.style-guide pre:before {
+pre:before {
 	font-size: 0.8rem;
 	border-radius: 0.3rem 0.3rem 0 0;
 	display: block;
@@ -110,37 +110,37 @@
 	padding: 0.25rem 0.25rem;
 }
 
-.style-guide input:hover {
+input:hover {
 	border: 1px solid #33AAFF;
 }
 
-.style-guide input:focus {
+input:focus {
 	box-shadow: 0 0 10px #33AAFF;
 }
 
-.style-guide section {
+section {
 	margin-top: 3rem;
 }
 
-.style-guide h1 {
+h1 {
 	font-size: 3rem;
 }
 
-.style-guide h2 {
+h2 {
 	font-size: 2rem;
 }
 
-.style-guide h3 {
+h3 {
 	font-size: 1.5rem;
 	padding-bottom: 1rem;
 }
 
-.style-guide h2,
-.style-guide h3,
-.style-guide h4 {
+h2,
+h3,
+h4 {
 	margin-top: 0;
 }
 
-.style-guide img {
+img {
 	width: 100px;
 }
