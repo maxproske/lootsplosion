@@ -74,13 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries
    ========================================================================== */
 
-@media (max-width: 60em) {
+@media (max-width: 40em) {
 	.banner {
-		padding: 1rem;
 		width: 85%;
 	}
 	header nav ul li {
-		flex: 1 40%;
+		flex: 1 100%;
 		width: 100%;
 		padding: 0 1rem;
 	}
@@ -332,7 +331,10 @@ body #imagery-and-art-direction img {
     color: #333;
     background-color: #FFFF00;
     border: 1px solid #333;
-    cursor: pointer;
+	cursor: pointer;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	box-shadow: -0.4rem 0.4rem #000;
 }
 
 .warning-button {
