@@ -8,6 +8,7 @@ h3 {
     padding: 0.8rem;
     display: block;
     overflow: auto;
+    margin-bottom: 1rem;
 
     display: flex;
     flex-wrap: wrap;
