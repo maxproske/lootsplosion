@@ -1,0 +1,17 @@
+.product-key {
+    background-color: #f7f7f7;
+	border: 1px solid #ddd;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+	display: block;
+	overflow: auto;
+}
+
+.product-code {
+    margin-top: 4rem;
+}
+
+.support {
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+}

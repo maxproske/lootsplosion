@@ -31,7 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 .welcome,
 .citations,
 .style-guide,
-.contact-us {
+.contact-us,
+.thank-you {
 	max-width: 42rem; /* Constrain main width */
 	border: 1px solid #ccc;
 	background-color: #fff;
