@@ -1,8 +1,13 @@
 .contact-email,
-.contact-title,
+.contact-subject,
 .contact-body {
     width: 100%;
     padding: 0.5rem;
+}
+
+.contact-email,
+.contact-subject {
+	max-width: 15rem;
 }
 
 .contact-body {
@@ -12,4 +17,15 @@
 
 .confirmation-button {
 	margin-top: 2rem;
+}
+
+.contact-us form {
+	margin-top: 2rem;
+}
+
+.contact-us label {
+	font-size: 1.25rem;
+	font-weight: bold;
+	display: block;
+	margin: 1rem 0;
 }

@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Droid Serif", "Open Sans", Arial, sans-serif;
 }
 
+video::-webkit-media-controls {
+	display: none;
+}
+
 .skip {
     color: rgba(255, 255, 255, 0.5);
     display: inline;
