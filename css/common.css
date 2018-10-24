@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 }
 .fullscreen-bg {
-	z-index: -1; /* Display under buttons */
+	z-index: -10; /* Display under buttons */
 	max-height: 60vh; /* Fill up to 60% of device view height */
 	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); /* Fade video to bottom */
 	mask-image: linear-gradient(linear, left top, left bottom, rgba(0,0,0,1), rgba(0,0,0,0));
