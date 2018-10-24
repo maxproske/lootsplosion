@@ -91,12 +91,21 @@
 }
 
 .add-to-cart {
-    background-color: #f2e123;
+    background-color: #4caf50;
+}
+.add-to-cart:hover,
+.add-to-cart:active,
+.add-to-cart:focus {
+    background-color: #59e45f
 }
 
-.remove-from-cart,
+
+.remove-from-cart {
+    background-color: #e95555
+}
+
 .remove-from-cart:focus,
 .remove-from-cart:active,
 .remove-from-cart:hover {
-    background-color: #e95555;
+    background-color: #ff6767;
 }
