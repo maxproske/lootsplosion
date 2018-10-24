@@ -5,7 +5,7 @@ p {
 	line-height: 1.5rem;
 }
 
-li {
+.numbered-list {
 	line-height: 2rem;
 }
 
@@ -141,6 +141,6 @@ h4 {
 	margin-top: 0;
 }
 
-img {
+.persona {
 	width: 100px;
 }
