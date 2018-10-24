@@ -331,7 +331,10 @@ body #imagery-and-art-direction img {
     color: #333;
     background-color: #FFFF00;
     border: 1px solid #333;
-    cursor: pointer;
+	cursor: pointer;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	box-shadow: -0.4rem 0.4rem #000;
 }
 
 .warning-button {
