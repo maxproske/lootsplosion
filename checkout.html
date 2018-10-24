@@ -52,25 +52,18 @@
                     <section class="payment">
                         <h3 class="payment-title">Billing Information</h3>
 
-                        <form action='thankyou.html'>
-                            <label class="select-input-label" for="card-type">Card Type</label>
-                            <select class="select-input-field" id="card-type" name="card-type">
-                                <option value="mc">Mastercard</option>
-                                <option value="visa">Visa</option>
-                                <option value="amex">American Express</option>
-                            </select>
-                            <br>
+                        <form class="billing-form" action='thankyou.html'>
                             <label class="text-input-label" for="card-name">Cardholder's Name</label>
-                            <input class="text-input-field" type="text" name="card-name" id="card-name" placeholder="John Doe" required>
+                            <input class="text-input-field" type="text" name="card-name" id="card-name" placeholder="John Doe">
                             <br>
                             <label class="text-input-label" for="card-number">Card Number</label>
-                            <input class="text-input-field" type="text" name="card-number" id="card-number" placeholder="4170 0000 0000 0000" required>
+                            <input class="text-input-field" type="text" name="card-number" id="card-number" placeholder="4170 0000 0000 0000">
                             <br>
                             <label class="text-input-label" for="card-expiry">Valid thru</label>
-                            <input class="text-input-field" type="text" name="card-expiry" id="card-expiry" placeholder="MM/YY" required>
+                            <input class="text-input-field" type="text" name="card-expiry" id="card-expiry" placeholder="MM/YY">
                             <br>
                             <label class="text-input-label" for="card-cvc">CVC</label>
-                            <input class="text-input-field" type="text" name="card-cvc" id="card-cvc" placeholder="000" required>
+                            <input class="text-input-field" type="text" name="card-cvc" id="card-cvc" placeholder="000">
                             <br>
                             <input class="button" type="submit" value="Submit">
                         </form>
