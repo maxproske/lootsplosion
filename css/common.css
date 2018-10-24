@@ -74,13 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries
    ========================================================================== */
 
-@media (max-width: 60em) {
+@media (max-width: 40em) {
 	.banner {
-		padding: 1rem;
 		width: 85%;
 	}
 	header nav ul li {
-		flex: 1 40%;
+		flex: 1 100%;
 		width: 100%;
 		padding: 0 1rem;
 	}

@@ -94,13 +94,16 @@
 	border: 1px solid #ccc;
 	background-color: #fff;
 	border-radius: 0.3rem;
+	transition-duration: 0.1s; /* For translateY */
 
 	box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
 }
 
+.in-stock:focus .product,
 .product:active,
-.product:focus,
 .product:hover {
+	-webkit-transform: translateY(-0.1rem);
+	transform: translateY(-0.1rem);
 	transition: box-shadow 0.1s ease-in-out;
 	box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.3);
 	/* Hover animation */
@@ -178,10 +181,7 @@
 
 .featured .category-title {
 	max-height: 800px;
-}
-
-.featured .in-stock {
-	overflow: hidden;
+	white-space: nowrap; /* Don't wrap */
 }
 
 .featured .product {
