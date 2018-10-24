@@ -349,3 +349,31 @@ body #imagery-and-art-direction img {
 .button-block {
     display: block;
 }
+
+/* Misc
+   ========================================================================== */
+   
+.footer-menu {
+	margin-bottom: 1rem;
+}
+
+.footer-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-menu li {
+	padding: 0 0.5rem;
+	display: inline-block;
+}
+
+.footer-menu a {
+	color: #333;
+}
+
+.footer-menu a:focus,
+.footer-menu a:hover,
+.footer-menu a:active {
+	color: #33AAFF;
+}
