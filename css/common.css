@@ -358,6 +358,10 @@ body #imagery-and-art-direction img {
 	width: 100%;
 }
 
+.hidden {
+	display: none;
+}
+
 .button,
 .warning-button {
     background-color: #fff;
@@ -425,3 +429,4 @@ body #imagery-and-art-direction img {
 .footer-menu a:active {
 	color: #33AAFF;
 }
+
