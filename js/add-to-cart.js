@@ -1,9 +1,6 @@
 "use strict";
 
-console.log("js loaded");
-
 var checkoutCart = document.querySelector('#cart');
-
 var button = document.querySelector(".add-to-cart");
 
 button.addEventListener("click",
@@ -14,6 +11,7 @@ button.addEventListener("click",
             button.textContent = "Remove from cart";
 
             checkoutCart.classList.remove('hidden');
+            checkoutCart.classList.add('visible');
             checkoutCart.setAttribute('aria-hidden', 'false');
             return;
         }
@@ -22,6 +20,7 @@ button.addEventListener("click",
         button.textContent = "Add to cart";
 
         checkoutCart.classList.add('hidden');
+        checkoutCart.classList.remove('visible');
         checkoutCart.setAttribute('aria-hidden', 'true');
     }
 );
