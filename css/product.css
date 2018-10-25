@@ -40,6 +40,7 @@
 
 .details-info {
     margin: 1rem;
+    min-width: 15rem;
 }
 
 .product-preview {

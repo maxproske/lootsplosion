@@ -77,7 +77,7 @@ video::-webkit-media-controls {
 
 /* Homepage video banner
    ========================================================================== */
-   
+
 .fullscreen-bg,
 .fullscreen-bg__video {
 	position: absolute;
@@ -400,7 +400,7 @@ body #imagery-and-art-direction img {
 
 /* Misc
    ========================================================================== */
-   
+
 .footer-menu {
 	margin-bottom: 1rem;
 }
