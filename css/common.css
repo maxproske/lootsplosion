@@ -299,6 +299,10 @@ div.grid .grid-row .col {
 	margin-bottom: 1rem;
 }
 
+.color-display.removeColor {
+	background: #E95555;
+	margin-bottom: 1rem;
+}
 
 .color-display.accentColor {
 	background: #333;
