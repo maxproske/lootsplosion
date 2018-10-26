@@ -10,7 +10,8 @@
 }
 
 .view-product-title,
-.related-products-title {
+.related-products-title,
+.comments-title {
     color: #333;
     flex: 1 100%;
     margin: 3rem 1rem 0 1rem;
@@ -158,4 +159,145 @@
     left: 2.35rem;
 
     color: white;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+}
+
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 1rem;
+    padding: 1rem;
+    list-style: none;
+
+    max-width: 30rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 1rem -0.1rem rgba(0, 0, 0, 0.05);
+}
+
+.profile-name,
+.profile-pic,
+.comment-text,
+.thumbs {
+    display: block;
+
+}
+
+.profile-pic {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.thumbs {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.up {
+    color: #4caf50;
+}
+
+.down {
+    color: #e95555;
+}
+
+.profile-name {
+    margin: 0;
+    padding: 0;
+}
+.comment-text {
+    width: 100%;
+}
+
+.profile-pic {
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.review-body {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    min-height: 10rem;
+    width: 100%;
+    resize: vertical;
+    display: block;
+}
+
+.leave-review {
+    margin: 0;
+    max-width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.leave-review-container {
+    margin: 1rem;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.125rem solid #ccc;
+
+}
+
+.review-label {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.thumb-label {
+    font-size: 2rem;
+    margin: 0.75rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.up-label:hover,
+.up-label:focus,
+#up-radio:checked+label {
+    color: #4caf50;
+}
+
+.down-label:hover,
+.down-label:focus,
+#down-radio:checked+label {
+    color: #e95555;
+}
+
+#up-radio:focus+label,
+#down-radio:focus+label {
+    text-shadow:
+    -0.05rem -0.05rem 0.5rem #333,
+    0.05rem -0.05rem 0.5rem #333,
+    -0.05rem 0.05rem 0.5rem #333,
+    0.05rem 0.05rem 0.5rem #333;
+}
+
+.down-label:hover,
+.down-label:focus {
+    color: #e95555;
+}
+
+
+.confirmation-button {
+    margin: 0.75rem;
+}
+
+.not-visible {
+    opacity: 0;
+    height: 0;
+    width: 0;
 }
