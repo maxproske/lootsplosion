@@ -11,7 +11,7 @@
 }
 
 .contact-body {
-	height: 10rem;
+	min-height: 10rem;
 	resize: vertical;
 }
 
