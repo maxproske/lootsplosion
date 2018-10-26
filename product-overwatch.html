@@ -109,11 +109,13 @@
                 <textarea class="text-input-field review-body" name="review-body" id="review-body" placeholder="What do you think?" required></textarea>
 
                     <div>
-                        <input type='radio' aria-label='thumbs up' name='thumbs' value='up' id='up-radio' class='not-visible' checked>
-                        <label for="up-radio"><i class='thumb-label up-label fas fa-thumbs-up'></i>Thumbs Up</label>
+                        <fieldset>
+                            <input type='radio' aria-label='Thumbs Up' name='thumbs' value='up' id='up-radio' class='not-visible' checked>
+                            <label for="up-radio"><i class='thumb-label up-label fas fa-thumbs-up'></i>Thumbs Up</label>
 
-                        <input type='radio' aria-label='thumbs-down' name='thumbs' value='down' id='down-radio' class='not-visible'>
-                        <label for="down-radio"><i class='thumb-label down-label fas fa-thumbs-down'></i>Thumbs Down</label>
+                            <input type='radio' aria-label='Thumbs Down' name='thumbs' value='down' id='down-radio' class='not-visible'>
+                            <label for="down-radio"><i class='thumb-label down-label fas fa-thumbs-down'></i>Thumbs Down</label>
+                        </fieldset>
                     </div>
 
                 <input class="button confirmation-button" type="submit" value="Send">
