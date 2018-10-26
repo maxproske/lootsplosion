@@ -280,10 +280,10 @@
 #up-radio:focus+label,
 #down-radio:focus+label {
     text-shadow:
-    -0.05rem -0.05rem 0.5rem #333,
-    0.05rem -0.05rem 0.5rem #333,
-    -0.05rem 0.05rem 0.5rem #333,
-    0.05rem 0.05rem 0.5rem #333;
+    -0.05rem -0.05rem 0.5rem #fff,
+    0.05rem -0.05rem 0.5rem #fff,
+    -0.05rem 0.05rem 0.5rem #fff,
+    0.05rem 0.05rem 0.5rem #fff;
 }
 
 .down-label:hover,
@@ -300,4 +300,23 @@
     opacity: 0;
     height: 0;
     width: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+@media (max-width: 40em) {
+    fieldset label {
+        display: block;
+        width: 100%;
+    }
+    .confirmation-button {
+        display: block;
+        width: 100%;
+    }
 }
