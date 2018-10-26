@@ -123,7 +123,7 @@ video::-webkit-media-controls {
 		display: none;
 	}
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none) {
 	.fullscreen-bg__video {
 		display: none;
 	}
