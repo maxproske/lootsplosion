@@ -117,6 +117,18 @@ video::-webkit-media-controls {
 	}
 }
 
+/* Hide <video> tag on browsers that don't support it */
+@supports (-ms-ime-align:auto) {
+	.fullscreen-bg__video {
+		display: none;
+	}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.fullscreen-bg__video {
+		display: none;
+	}
+}
+
 /* Media Queries
    ========================================================================== */
 
