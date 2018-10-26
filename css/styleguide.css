@@ -44,13 +44,10 @@ section.listing {
 }
 
 article.product {
-	width: 42%;
 	min-height: 3rem;
-	background: #eee;
 	border: 1px solid #ccc;
 	text-align: center;
 	margin-bottom: 1rem;
-	padding: 1rem;
 }
 
 .persona {
@@ -65,7 +62,11 @@ a figure {
 	margin: 0;
 }
 
-a figure img:hover {
+.image-link img {
+	max-width: 15rem;
+}
+
+.image-link img:hover {
 	opacity: 0.7;
 }
 
@@ -73,7 +74,8 @@ form {
 	border: 1px solid #c6c7cc;
 	border-radius: 5px;
 	overflow: hidden;
-	width: 240px;
+    width: 20rem;
+    padding: 1rem;
 }
 
 fieldset {
@@ -85,6 +87,11 @@ fieldset {
 label {
 	font-weight: bold;
 	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+}
+
+input.button {
+	margin-top: 1rem;
 }
 
 .text-input-label {
@@ -139,4 +146,8 @@ h2,
 h3,
 h4 {
 	margin-top: 0;
+}
+
+ol {
+	line-height: 1.5rem;
 }
